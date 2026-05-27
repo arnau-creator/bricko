@@ -14,7 +14,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:#F5F0E8;color:#1A1612;overflow-x:hidden}
- 
+
 /* ===================== VARIABLES ===================== */
 :root{
   --o:#E8521A;
@@ -25,11 +25,11 @@ body{font-family:'DM Sans',sans-serif;background:#F5F0E8;color:#1A1612;overflow-
   --bd:#E0D8CC;
   --wh:#FFFFFF;
 }
- 
+
 /* ===================== PAGES ===================== */
 .page{display:none}
 .page.active{display:block}
- 
+
 /* ===================== NAV ===================== */
 nav{
   display:flex;align-items:center;justify-content:space-between;
@@ -53,7 +53,7 @@ nav{
   border:none;transition:opacity .2s;
 }
 .nav-cta:hover{opacity:.85}
- 
+
 /* ===================== TYPOGRAPHY HELPERS ===================== */
 .sec-lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--o);font-weight:600;margin-bottom:14px}
 .sec-ttl{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-2px;line-height:1.04}
@@ -70,7 +70,7 @@ nav{
   border:1.5px solid var(--bd);cursor:pointer;transition:all .2s;
 }
 .btn-g:hover{border-color:var(--o);color:var(--o)}
- 
+
 /* ===================== TICKER ===================== */
 .ticker{background:var(--o);padding:13px 0;overflow:hidden}
 .ticker-inner{
@@ -81,7 +81,7 @@ nav{
 }
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .tick-dot{color:rgba(255,255,255,.35)}
- 
+
 /* ===================== HERO ===================== */
 .hero{background:var(--dk);padding:72px 48px 0;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:end}
 .hero-left{padding-bottom:72px}
@@ -100,7 +100,7 @@ nav{
 .stat-b{flex:1;background:var(--cr);padding:20px 16px;text-align:center}
 .stat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:800;color:var(--dk)}
 .stat-l{font-size:11px;color:var(--mt);text-transform:uppercase;letter-spacing:.7px;margin-top:2px}
- 
+
 /* ===================== BEFORE/AFTER ===================== */
 .before-after{
   position:relative;overflow:hidden;
@@ -133,7 +133,7 @@ nav{
 }
 .cap-b{left:14px;background:rgba(0,0,0,.55);color:#9A8070}
 .cap-a{right:14px;background:var(--o);color:white}
- 
+
 /* ===================== SERVICES ===================== */
 .srv-section{padding:88px 48px;background:var(--cr)}
 .srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:transparent;border:none;border-radius:0;overflow:visible;margin-top:48px}
@@ -154,7 +154,7 @@ nav{
 .sp-num small{font-size:13px;font-weight:400;color:var(--mt)}
 .srv-arr{position:absolute;right:24px;bottom:24px;width:32px;height:32px;background:#FFF0E8;border-radius:50%;display:flex;align-items:center;justify-content:center}
 .srv-arr i{font-size:14px;color:var(--o)}
- 
+
 /* ===================== PROCESS ===================== */
 .proc-section{background:var(--dk);padding:88px 48px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:transparent;border-radius:0;overflow:visible;margin-top:56px}
@@ -162,7 +162,7 @@ nav{
 .step-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:44px;font-weight:800;color:rgba(232,82,26,.18);line-height:1;margin-bottom:14px}
 .step h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--cr);margin-bottom:8px}
 .step p{font-size:12px;color:#5A4E40;line-height:1.6}
- 
+
 /* ===================== GALLERY ===================== */
 .gallery-section{padding:88px 48px;background:white}
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -172,7 +172,7 @@ nav{
 .obra-tag{display:inline-block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:100px;background:#FFF0E8;color:#993C1D;margin-bottom:8px}
 .obra-info h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--dk);margin-bottom:4px}
 .obra-info p{font-size:12px;color:var(--mt);line-height:1.5}
- 
+
 /* ===================== TESTIMONIALS ===================== */
 .testi-section{background:var(--cr);padding:88px 48px}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -183,7 +183,7 @@ nav{
 .testi-av{width:36px;height:36px;border-radius:50%;background:var(--o);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;color:white;flex-shrink:0}
 .testi-name{font-size:13px;font-weight:600;color:var(--dk)}
 .testi-loc{font-size:11px;color:var(--mt)}
- 
+
 /* ===================== FINANCE STRIP ===================== */
 .fin-strip{background:var(--dk);padding:72px 48px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .fin-strip .sec-ttl{color:var(--cr);font-size:36px;margin-bottom:14px}
@@ -196,7 +196,7 @@ nav{
 .fin-rl{font-size:12px;color:#6A5E50}
 .fin-rv{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:var(--cr)}
 .fin-rv.green{color:#1D9E75}
- 
+
 /* ===================== CONTACT ===================== */
 .contact-section{padding:88px 48px;background:var(--cr)}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
@@ -228,7 +228,7 @@ nav{
 }
 .form-sub:hover{opacity:.88}
 .form-legal{font-size:11px;color:var(--mt);text-align:center;margin-top:12px;line-height:1.5}
- 
+
 /* ===================== FOOTER ===================== */
 footer{background:var(--dk);padding:56px 48px 28px}
 .footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px}
@@ -241,14 +241,14 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .footer-col a:hover{color:var(--cr)}
 .footer-bottom{border-top:1px solid #2C2218;padding-top:20px;display:flex;justify-content:space-between;align-items:center}
 .footer-bottom span{font-size:11px;color:#5A4E40}
- 
+
 /* ===================== INNER PAGE HERO ===================== */
 .page-hero{background:var(--dk);padding:72px 48px}
 .page-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1;margin-bottom:16px}
 .page-hero h1 em{color:var(--o);font-style:normal}
 .page-hero-desc{font-size:14px;color:#7A6E60;line-height:1.7;margin-bottom:28px}
- 
+
 /* ===================== PRICING ===================== */
 .pricing-section{padding:88px 48px;background:white}
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -262,7 +262,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .price-feats{display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
 .pf{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--dk);line-height:1.4}
 .pf-check{color:var(--o);font-size:14px;flex-shrink:0;margin-top:1px}
- 
+
 /* ===================== COMO FUNCIONA ===================== */
 .como-hero{background:var(--dk);padding:72px 48px;text-align:center}
 .como-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:52px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:16px}
@@ -298,7 +298,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .faq-a{font-size:13px;color:var(--mt);line-height:1.7;margin-top:12px;display:none}
 .faq-item.open .faq-a{display:block}
 .faq-item.open .faq-q i{transform:rotate(180deg)}
- 
+
 /* ===================== FINANCIACION ===================== */
 .fin-hero{background:var(--dk);padding:72px 48px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .fin-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1.05;margin-bottom:16px}
@@ -332,7 +332,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .trust-item{text-align:center;padding:28px 20px;background:var(--cr);border-radius:12px;border:1px solid var(--bd)}
 .trust-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;color:var(--o)}
 .trust-lbl{font-size:12px;color:var(--mt);margin-top:4px;line-height:1.5}
- 
+
 /* ===================== RESPONSIVE ===================== */
 @media(max-width:768px){
   nav{padding:14px 20px}
@@ -358,7 +358,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
 </style>
 </head>
 <body>
- 
+
 <nav>
   <a class="logo" onclick="goPage('home')"><img src="bricko_logo.png" alt="Bricko" style="height:32px;width:auto;filter:brightness(0) invert(1)"></a>
   <div class="nav-links">
@@ -369,12 +369,12 @@ footer{background:var(--dk);padding:56px 48px 28px}
   </div>
   <button class="nav-cta" onclick="goPage('contacto')">Pedir presupuesto</button>
 </nav>
- 
+
 <!-- ============================================================ -->
 <!-- PAGE: HOME -->
 <!-- ============================================================ -->
 <div class="page active" id="page-home">
- 
+
   <div class="hero">
     <div class="hero-left">
       <div class="hero-badge">Reformas sin estrés</div>
@@ -391,10 +391,10 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <!-- Ejemplo: <div class="ba-left-p"><img src="fotos/bano-antes.jpg" alt="Antes"></div> -->
       <div class="before-after" id="ba-hero" style="height:360px">
         <div class="ba-panel ba-left-p" id="ba-h-l">
-          <img src="Baño_1_sin_reformar.jpg" alt="Baño antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+          <img src="bano1_antes.jpg" alt="Baño antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="ba-panel ba-right-p" id="ba-h-r">
-          <img src="Baño_1.jpg" alt="Baño después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
+          <img src="bano1_despues.jpg" alt="Baño después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
         </div>
         <div class="ba-divider" id="ba-h-div"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span>
@@ -407,7 +407,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <div class="ticker">
     <div class="ticker-inner">
       <span>Baños en 5 días</span><span class="tick-dot">✦</span>
@@ -422,7 +422,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <span>Garantía 2 años</span><span class="tick-dot">✦</span>
     </div>
   </div>
- 
+
   <div class="srv-section">
     <div class="sec-lbl">Nuestros servicios</div>
     <div class="sec-ttl" style="font-size:38px">Lo que hacemos<br>mejor que nadie.</div>
@@ -461,7 +461,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <div class="proc-section">
     <div class="sec-lbl" style="color:var(--o)">El proceso</div>
     <div class="sec-ttl" style="color:var(--cr);font-size:38px">Así de fácil es reformar<br>con Bricko.</div>
@@ -472,21 +472,21 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="step"><div class="step-n">04</div><h4>Entregamos y listo</h4><p>Revisión final, limpieza y garantía de 2 años. Baños en 5 días. Cocinas en menos de 7.</p></div>
     </div>
   </div>
- 
+
   <!-- GALLERY HOME: 3 obras antes/después -->
   <div class="gallery-section">
     <div class="sec-lbl">Trabajos recientes</div>
     <div class="sec-ttl" style="font-size:38px">Resultados que<br>hablan por sí solos.</div>
     <div class="gallery-grid">
- 
+
       <div class="obra-card">
         <!-- OBRA 1 -->
         <div class="obra-ba" id="g1">
           <div class="ba-panel ba-left-p" id="g1-l">
-            <img src="Baño_1_sin_reformar.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+            <img src="bano1_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
           </div>
           <div class="ba-panel ba-right-p" id="g1-r">
-            <img src="Baño_1.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
+            <img src="bano1_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
           </div>
           <div class="ba-divider" id="g1-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -497,14 +497,14 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <p>Reforma integral con plato de ducha, sanitarios suspendidos y microcemento.</p>
         </div>
       </div>
- 
+
       <div class="obra-card">
         <div class="obra-ba" id="g2">
           <div class="ba-panel ba-left-p" id="g2-l">
-            <img src="Baño_2.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+            <img src="bano2_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
           </div>
           <div class="ba-panel ba-right-p" id="g2-r">
-            <img src="Baño_2_reformado.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
+            <img src="bano2_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
           </div>
           <div class="ba-divider" id="g2-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -515,14 +515,14 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <p>Redistribución completa, isla central y electrodomésticos integrados.</p>
         </div>
       </div>
- 
+
       <div class="obra-card">
         <div class="obra-ba" id="g3">
           <div class="ba-panel ba-left-p" id="g3-l">
-            <img src="Baño_3 .jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+            <img src="bano3_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
           </div>
           <div class="ba-panel ba-right-p" id="g3-r">
-            <img src="Baño_3_reformado.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
+            <img src="bano3_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
           </div>
           <div class="ba-divider" id="g3-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -533,10 +533,10 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <p>Bañera exenta, doble lavabo empotrado y suelo porcelánico gran formato.</p>
         </div>
       </div>
- 
+
     </div>
   </div>
- 
+
   <div class="testi-section">
     <div class="sec-lbl">Opiniones reales</div>
     <div class="sec-ttl" style="font-size:38px">Lo que dicen<br>nuestros clientes.</div>
@@ -546,7 +546,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="testi-card"><div class="testi-stars">★★★★★</div><p>"Hicimos baño y cocina a la vez. En un mes teníamos el piso como nuevo. El resultado superó todas nuestras expectativas. Muy recomendables."</p><div class="testi-author"><div class="testi-av">AP</div><div><div class="testi-name">Ana P.</div><div class="testi-loc">Valencia · Baño + Cocina</div></div></div></div>
     </div>
   </div>
- 
+
   <div class="contact-section">
     <div class="sec-lbl" style="text-align:center">Contacto</div>
     <div class="sec-ttl" style="font-size:38px;text-align:center;margin-bottom:56px">¿Listo para empezar?</div>
@@ -578,7 +578,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <footer>
     <div class="footer-top">
       <div>
@@ -593,10 +593,10 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
     <div class="footer-bottom"><span>© 2025 Bricko. Todos los derechos reservados.</span><span>Reformas sin estrés</span></div>
   </footer>
- 
+
 </div><!-- /page-home -->
- 
- 
+
+
 <!-- ============================================================ -->
 <!-- PAGE: BAÑOS -->
 <!-- ============================================================ -->
@@ -613,17 +613,17 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
       <div class="before-after" id="ba-banos" style="height:320px;border-radius:10px">
         <div class="ba-panel ba-left-p" id="ba-ban-l">
-          <img src="Baño_2.jpeg" alt="Baño antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+          <img src="bano2_antes.jpg" alt="Baño antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="ba-panel ba-right-p" id="ba-ban-r">
-          <img src="Baño_2_reformado.jpg" alt="Baño después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
+          <img src="bano2_despues.jpg" alt="Baño después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
         </div>
         <div class="ba-divider" id="ba-ban-d"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
     </div>
   </div>
- 
+
   <div class="pricing-section">
     <div class="sec-lbl">Tarifas</div>
     <div class="sec-ttl" style="font-size:36px">Elige el tipo de reforma<br>que se adapta a ti.</div>
@@ -672,13 +672,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Quieres reformar tu baño?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratuito →</button></div>
   </div>
- 
+
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -686,8 +686,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </footer>
 </div><!-- /page-banos -->
- 
- 
+
+
 <!-- ============================================================ -->
 <!-- PAGE: COCINAS -->
 <!-- ============================================================ -->
@@ -704,17 +704,17 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
       <div class="before-after" id="ba-coc" style="height:320px;border-radius:10px">
         <div class="ba-panel ba-left-p" id="ba-coc-l">
-          <img src="Baño_3 .jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+          <img src="bano3_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="ba-panel ba-right-p" id="ba-coc-r">
-          <img src="Baño_3_reformado.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
+          <img src="bano3_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
         </div>
         <div class="ba-divider" id="ba-coc-d"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
     </div>
   </div>
- 
+
   <div class="pricing-section">
     <div class="sec-lbl">Tarifas</div>
     <div class="sec-ttl" style="font-size:36px">Encuentra el pack<br>que necesitas.</div>
@@ -762,13 +762,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Quieres reformar tu cocina?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratuito →</button></div>
   </div>
- 
+
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -776,8 +776,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </footer>
 </div><!-- /page-cocinas -->
- 
- 
+
+
 <!-- ============================================================ -->
 <!-- PAGE: CÓMO FUNCIONA -->
 <!-- ============================================================ -->
@@ -787,7 +787,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
     <h1>Así de fácil es<br>reformar <em>con Bricko.</em></h1>
     <p>Un proceso claro, sin sorpresas y con un equipo que te acompaña en cada paso.</p>
   </div>
- 
+
   <div class="timeline-section">
     <div class="sec-lbl" style="text-align:center">Paso a paso</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center">Del formulario a la entrega.</div>
@@ -859,7 +859,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <div class="garantias-section">
     <div class="sec-lbl" style="text-align:center">Garantías</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center">Por qué elegir Bricko.</div>
@@ -871,7 +871,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-eye"></i></div><h3>Transparencia total</h3><p>Fotos diarias, acceso al jefe de obra y actualizaciones constantes. Tú siempre sabes qué pasa.</p></div>
       
   </div>
- 
+
   <div class="faq-section">
     <div class="sec-lbl" style="text-align:center">FAQ</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center;margin-bottom:0">Preguntas frecuentes.</div>
@@ -883,13 +883,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Puedo elegir los materiales y azulejos?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Por supuesto. Nuestro diseñador te guía en la selección según tu gusto y presupuesto. También podemos acompañarte a showrooms de proveedores.</p></div>
       
   </div>
- 
+
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Empezamos tu reforma?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis →</button></div>
   </div>
- 
+
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -897,11 +897,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </footer>
 </div><!-- /page-como -->
- 
- 
- 
- 
- 
+
+
+
+
+
 <!-- ============================================================ -->
 <!-- PAGE: CONTACTO -->
 <!-- ============================================================ -->
@@ -911,7 +911,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
     <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:48px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:12px;line-height:1.1">¿Empezamos<br><span style="color:var(--o)">tu reforma?</span></h1>
     <p style="font-size:15px;color:#7A6E60;max-width:420px;margin:0 auto;line-height:1.7">Cuéntanos tu proyecto. Un asesor te contactará en menos de 24 horas con toda la información.</p>
   </div>
- 
+
   <div class="contact-section" style="padding-top:60px">
     <div class="contact-inner">
       <div class="contact-left">
@@ -970,7 +970,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
- 
+
   <footer>
     <div class="footer-top">
       <div>
@@ -986,8 +986,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
     <div class="footer-bottom"><span>© 2025 Bricko. Todos los derechos reservados.</span><span>Reformas sin estrés</span></div>
   </footer>
 </div><!-- /page-contacto -->
- 
- 
+
+
 <!-- ============================================================ -->
 <!-- JAVASCRIPT -->
 <!-- ============================================================ -->
@@ -1001,7 +1001,7 @@ function goPage(id) {
   if (map[id]) document.getElementById(map[id]).classList.add('active');
   window.scrollTo(0, 0);
 }
- 
+
 /* ---- BEFORE/AFTER SLIDER ---- */
 function initBA(wrapperId, divId, leftId, rightId) {
   const w = document.getElementById(wrapperId);
@@ -1027,14 +1027,14 @@ function initBA(wrapperId, divId, leftId, rightId) {
   window.addEventListener('touchmove', e => { if (drag) set(e.touches[0].clientX); }, {passive:true});
   window.addEventListener('touchend', () => { drag = false; });
 }
- 
+
 initBA('ba-hero','ba-h-div','ba-h-l','ba-h-r');
 initBA('ba-banos','ba-ban-d','ba-ban-l','ba-ban-r');
 initBA('ba-coc','ba-coc-d','ba-coc-l','ba-coc-r');
 initBA('g1','g1-d','g1-l','g1-r');
 initBA('g2','g2-d','g2-l','g2-r');
 initBA('g3','g3-d','g3-l','g3-r');
- 
+
 /* ---- FINANCING CALCULATOR ---- */
 const impEl = document.getElementById('c-imp');
 const plaEl = document.getElementById('c-pla');
@@ -1059,7 +1059,7 @@ if (impEl && plaEl) {
   plaEl.addEventListener('input', updateCalc);
   updateCalc();
 }
- 
+
 /* ---- CONTACT FORM ---- */
 function handleSubmit(e) {
   e.preventDefault();
@@ -1068,7 +1068,7 @@ function handleSubmit(e) {
   btn.disabled = true;
   /*
     INTEGRACIÓN DEL FORMULARIO — elige una opción:
- 
+
     OPCIÓN A — Formspree (recomendado, gratis hasta 50 envíos/mes):
       1. Ve a formspree.io y crea una cuenta
       2. Crea un formulario y copia tu ID (ej: "xpzgkqvw")
@@ -1077,11 +1077,11 @@ function handleSubmit(e) {
          por:
          <form id="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
          y borra este script handleSubmit
- 
+
     OPCIÓN B — Typeform embed:
       1. Crea tu formulario en typeform.com
       2. Sustituye todo el <form> por el código embed de Typeform
- 
+
     OPCIÓN C — WhatsApp directo (más sencillo):
       Cambia el botón de submit por:
       <a href="https://wa.me/34TUNUMERO?text=Hola,%20quiero%20pedir%20presupuesto" class="form-sub" style="display:block;text-align:center;text-decoration:none">
@@ -1095,7 +1095,6 @@ function handleSubmit(e) {
   }, 1000);
 }
 </script>
- 
+
 </body>
 </html>
- 
