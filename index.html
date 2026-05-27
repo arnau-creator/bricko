@@ -6,14 +6,15 @@
 <title>Bricko — Reformas de baños y cocinas</title>
 <meta name="description" content="Reformas de baños y cocinas con diseño, calidad y sin complicaciones. Presupuesto gratuito en 24h. Garantía 2 años.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
 /* ===================== RESET & BASE ===================== */
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Instrument Sans',sans-serif;background:#F5F0E8;color:#1A1612;overflow-x:hidden}
-
+body{font-family:'DM Sans',sans-serif;background:#F5F0E8;color:#1A1612;overflow-x:hidden}
+ 
 /* ===================== VARIABLES ===================== */
 :root{
   --o:#E8521A;
@@ -24,18 +25,18 @@ body{font-family:'Instrument Sans',sans-serif;background:#F5F0E8;color:#1A1612;o
   --bd:#E0D8CC;
   --wh:#FFFFFF;
 }
-
+ 
 /* ===================== PAGES ===================== */
 .page{display:none}
 .page.active{display:block}
-
+ 
 /* ===================== NAV ===================== */
 nav{
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 48px;background:var(--dk);
   position:sticky;top:0;z-index:100;
 }
-.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:var(--cr);cursor:pointer;text-decoration:none}
+.logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;color:var(--cr);cursor:pointer;text-decoration:none}
 .logo span{color:var(--o)}
 .nav-links{display:flex;gap:32px}
 .nav-links a{
@@ -46,41 +47,41 @@ nav{
 }
 .nav-links a:hover,.nav-links a.active{color:var(--cr);border-bottom-color:var(--o)}
 .nav-cta{
-  background:var(--o);color:white;font-family:'Syne',sans-serif;
+  background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;
   font-weight:700;font-size:12px;padding:10px 22px;border-radius:4px;
   cursor:pointer;text-transform:uppercase;letter-spacing:.5px;
   border:none;transition:opacity .2s;
 }
 .nav-cta:hover{opacity:.85}
-
+ 
 /* ===================== TYPOGRAPHY HELPERS ===================== */
 .sec-lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--o);font-weight:600;margin-bottom:14px}
-.sec-ttl{font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-1.5px;line-height:1.05}
+.sec-ttl{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-2px;line-height:1.04}
 .btn-p{
-  background:var(--o);color:white;font-family:'Syne',sans-serif;
+  background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;
   font-weight:700;font-size:14px;padding:14px 28px;border-radius:6px;
   border:none;cursor:pointer;transition:opacity .2s;display:inline-block;
   text-decoration:none;
 }
 .btn-p:hover{opacity:.85}
 .btn-g{
-  background:transparent;color:var(--dk);font-family:'Syne',sans-serif;
+  background:transparent;color:var(--dk);font-family:'Plus Jakarta Sans',sans-serif;
   font-weight:700;font-size:13px;padding:14px 28px;border-radius:6px;
   border:1.5px solid var(--bd);cursor:pointer;transition:all .2s;
 }
 .btn-g:hover{border-color:var(--o);color:var(--o)}
-
+ 
 /* ===================== TICKER ===================== */
 .ticker{background:var(--o);padding:13px 0;overflow:hidden}
 .ticker-inner{
   display:flex;gap:50px;white-space:nowrap;
-  font-family:'Syne',sans-serif;font-size:12px;font-weight:600;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:600;
   color:white;letter-spacing:1px;text-transform:uppercase;
   animation:tick 22s linear infinite;
 }
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .tick-dot{color:rgba(255,255,255,.35)}
-
+ 
 /* ===================== HERO ===================== */
 .hero{background:var(--dk);padding:72px 48px 0;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:end}
 .hero-left{padding-bottom:72px}
@@ -91,15 +92,15 @@ nav{
   border-radius:100px;margin-bottom:24px;letter-spacing:.5px;
 }
 .hero-badge::before{content:'';width:5px;height:5px;background:var(--o);border-radius:50%}
-.hero h1{font-family:'Syne',sans-serif;font-size:54px;font-weight:800;line-height:1.0;color:var(--cr);letter-spacing:-2px;margin-bottom:20px}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:54px;font-weight:800;line-height:1.0;color:var(--cr);letter-spacing:-2px;margin-bottom:20px}
 .hero h1 em{color:var(--o);font-style:normal}
 .hero-sub{font-size:15px;color:#7A6E60;line-height:1.7;max-width:400px;margin-bottom:36px}
 .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .stats-bar{display:flex;gap:1px;background:var(--wm)}
 .stat-b{flex:1;background:var(--cr);padding:20px 16px;text-align:center}
-.stat-n{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:var(--dk)}
+.stat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:800;color:var(--dk)}
 .stat-l{font-size:11px;color:var(--mt);text-transform:uppercase;letter-spacing:.7px;margin-top:2px}
-
+ 
 /* ===================== BEFORE/AFTER ===================== */
 .before-after{
   position:relative;overflow:hidden;
@@ -110,13 +111,11 @@ nav{
 .ba-left-p{left:0;width:50%}
 .ba-right-p{right:0;width:50%}
 .ba-left-p img,.ba-right-p img{
-  position:absolute;top:0;height:100%;object-fit:cover;
+  position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;
 }
-.ba-left-p img{left:0;width:200%}
-.ba-right-p img{right:0;width:200%}
 /* SVG fallback illustrations */
-.ba-left-p svg{position:absolute;top:0;left:0;height:100%;width:200%}
-.ba-right-p svg{position:absolute;top:0;right:0;height:100%;width:200%}
+.ba-left-p svg{position:absolute;top:0;left:0;height:100%;width:100%}
+.ba-right-p svg{position:absolute;top:0;left:0;height:100%;width:100%}
 .ba-divider{
   position:absolute;top:0;width:3px;background:white;
   height:100%;left:50%;transform:translateX(-50%);z-index:10;cursor:ew-resize;
@@ -129,62 +128,62 @@ nav{
 }
 .ba-cap{
   position:absolute;bottom:14px;z-index:5;
-  font-family:'Syne',sans-serif;font-size:10px;font-weight:700;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;
   letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:3px;
 }
 .cap-b{left:14px;background:rgba(0,0,0,.55);color:#9A8070}
 .cap-a{right:14px;background:var(--o);color:white}
-
+ 
 /* ===================== SERVICES ===================== */
 .srv-section{padding:88px 48px;background:var(--cr)}
-.srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--bd);border:1px solid var(--bd);border-radius:12px;overflow:hidden;margin-top:48px}
-.srv-card{background:white;padding:40px 36px;cursor:pointer;transition:background .2s;position:relative}
+.srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:transparent;border:none;border-radius:0;overflow:visible;margin-top:48px}
+.srv-card{background:white;padding:40px 36px;cursor:pointer;transition:background .2s,box-shadow .25s,transform .25s;position:relative;border-radius:20px;border:1px solid var(--bd)}
 .srv-card::before{content:'';position:absolute;left:0;top:0;width:3px;height:100%;background:var(--o);opacity:0;transition:opacity .2s}
-.srv-card:hover{background:#FDFCFA}
+.srv-card:hover{background:#FDFCFA;box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
 .srv-card:hover::before{opacity:1}
 .srv-ic{width:48px;height:48px;background:#FFF0E8;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .srv-ic i{font-size:22px;color:var(--o)}
-.srv-card h3{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--dk);margin-bottom:10px;letter-spacing:-.5px}
+.srv-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:700;color:var(--dk);margin-bottom:10px;letter-spacing:-.5px}
 .srv-card p{font-size:13px;color:var(--mt);line-height:1.7;margin-bottom:20px}
 .srv-feats{display:flex;flex-direction:column;gap:7px}
 .sf{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--dk)}
 .sf-dot{width:4px;height:4px;background:var(--o);border-radius:50%;flex-shrink:0}
 .srv-price{margin-top:24px;padding-top:20px;border-top:1px solid var(--bd)}
 .sp-from{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--mt)}
-.sp-num{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--dk)}
+.sp-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:26px;font-weight:800;color:var(--dk)}
 .sp-num small{font-size:13px;font-weight:400;color:var(--mt)}
 .srv-arr{position:absolute;right:24px;bottom:24px;width:32px;height:32px;background:#FFF0E8;border-radius:50%;display:flex;align-items:center;justify-content:center}
 .srv-arr i{font-size:14px;color:var(--o)}
-
+ 
 /* ===================== PROCESS ===================== */
 .proc-section{background:var(--dk);padding:88px 48px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--wm);border-radius:8px;overflow:hidden;margin-top:56px}
-.step{background:#221C16;padding:32px 24px}
-.step-n{font-family:'Syne',sans-serif;font-size:44px;font-weight:800;color:rgba(232,82,26,.18);line-height:1;margin-bottom:14px}
-.step h4{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--cr);margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:transparent;border-radius:0;overflow:visible;margin-top:56px}
+.step{background:#221C16;padding:36px 28px;border-radius:20px}
+.step-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:44px;font-weight:800;color:rgba(232,82,26,.18);line-height:1;margin-bottom:14px}
+.step h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--cr);margin-bottom:8px}
 .step p{font-size:12px;color:#5A4E40;line-height:1.6}
-
+ 
 /* ===================== GALLERY ===================== */
 .gallery-section{padding:88px 48px;background:white}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-.obra-card{border-radius:10px;overflow:hidden;background:var(--cr);border:1px solid var(--bd)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.obra-card{border-radius:20px;overflow:hidden;background:var(--cr);border:1px solid var(--bd);transition:box-shadow .25s,transform .25s}
 .obra-ba{height:200px;position:relative;overflow:hidden;cursor:ew-resize;user-select:none}
 .obra-info{padding:20px}
 .obra-tag{display:inline-block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:100px;background:#FFF0E8;color:#993C1D;margin-bottom:8px}
-.obra-info h4{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--dk);margin-bottom:4px}
+.obra-info h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--dk);margin-bottom:4px}
 .obra-info p{font-size:12px;color:var(--mt);line-height:1.5}
-
+ 
 /* ===================== TESTIMONIALS ===================== */
 .testi-section{background:var(--cr);padding:88px 48px}
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-.testi-card{background:white;border-radius:12px;padding:28px;border:1px solid var(--bd)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.testi-card{background:white;border-radius:20px;padding:32px;border:1px solid var(--bd);transition:box-shadow .2s}
 .testi-stars{color:var(--o);font-size:14px;margin-bottom:12px;letter-spacing:2px}
 .testi-card p{font-size:13px;color:#5A4E40;line-height:1.7;margin-bottom:20px;font-style:italic}
 .testi-author{display:flex;align-items:center;gap:10px}
-.testi-av{width:36px;height:36px;border-radius:50%;background:var(--o);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:13px;color:white;flex-shrink:0}
+.testi-av{width:36px;height:36px;border-radius:50%;background:var(--o);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;color:white;flex-shrink:0}
 .testi-name{font-size:13px;font-weight:600;color:var(--dk)}
 .testi-loc{font-size:11px;color:var(--mt)}
-
+ 
 /* ===================== FINANCE STRIP ===================== */
 .fin-strip{background:var(--dk);padding:72px 48px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .fin-strip .sec-ttl{color:var(--cr);font-size:36px;margin-bottom:14px}
@@ -195,13 +194,13 @@ nav{
 .fin-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #2C2218}
 .fin-row:last-of-type{border-bottom:none}
 .fin-rl{font-size:12px;color:#6A5E50}
-.fin-rv{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--cr)}
+.fin-rv{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:var(--cr)}
 .fin-rv.green{color:#1D9E75}
-
+ 
 /* ===================== CONTACT ===================== */
 .contact-section{padding:88px 48px;background:var(--cr)}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.contact-left h2{font-family:'Syne',sans-serif;font-size:38px;font-weight:800;color:var(--dk);letter-spacing:-1.5px;margin-bottom:16px;line-height:1.1}
+.contact-left h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:38px;font-weight:800;color:var(--dk);letter-spacing:-1.5px;margin-bottom:16px;line-height:1.1}
 .contact-left > p{font-size:14px;color:var(--mt);line-height:1.7;margin-bottom:36px}
 .cinfo-list{display:flex;flex-direction:column;gap:16px}
 .cinfo{display:flex;gap:14px;align-items:flex-start}
@@ -209,13 +208,13 @@ nav{
 .cinfo-ic i{font-size:16px;color:var(--o)}
 .cinfo strong{display:block;font-size:12px;font-weight:600;color:var(--dk)}
 .cinfo span{font-size:12px;color:var(--mt)}
-.form-card{background:white;border-radius:14px;padding:36px;border:1px solid var(--bd)}
+.form-card{background:white;border-radius:24px;padding:40px;border:1px solid var(--bd)}
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 .fg{margin-bottom:14px}
 .fg label{display:block;font-size:11px;font-weight:600;color:var(--dk);text-transform:uppercase;letter-spacing:.5px;margin-bottom:7px}
 .fg input,.fg select,.fg textarea{
-  width:100%;padding:11px 14px;border:1px solid var(--bd);border-radius:7px;
-  font-family:'Instrument Sans',sans-serif;font-size:13px;color:var(--dk);
+  width:100%;padding:12px 16px;border:1px solid var(--bd);border-radius:10px;
+  font-family:'DM Sans',sans-serif;font-size:13px;color:var(--dk);
   background:var(--cr);outline:none;transition:border-color .2s;
   -webkit-appearance:none;appearance:none;
 }
@@ -223,50 +222,50 @@ nav{
 .fg textarea{resize:vertical;min-height:80px}
 .form-sub{
   width:100%;background:var(--o);color:white;
-  font-family:'Syne',sans-serif;font-weight:700;font-size:14px;
+  font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;
   padding:14px;border:none;border-radius:7px;cursor:pointer;
   letter-spacing:.5px;text-transform:uppercase;transition:opacity .2s;margin-top:6px;
 }
 .form-sub:hover{opacity:.88}
 .form-legal{font-size:11px;color:var(--mt);text-align:center;margin-top:12px;line-height:1.5}
-
+ 
 /* ===================== FOOTER ===================== */
 footer{background:var(--dk);padding:56px 48px 28px}
 .footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px}
-.footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:var(--cr)}
+.footer-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;color:var(--cr)}
 .footer-logo span{color:var(--o)}
 .footer-tagline{font-size:12px;color:#5A4E40;margin-top:6px;max-width:240px;line-height:1.5}
 .footer-cols{display:flex;gap:44px}
-.footer-col h5{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:#5A4E40;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+.footer-col h5{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;color:#5A4E40;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
 .footer-col a{display:block;font-size:12px;color:#7A6E60;text-decoration:none;margin-bottom:9px;cursor:pointer;transition:color .2s}
 .footer-col a:hover{color:var(--cr)}
 .footer-bottom{border-top:1px solid #2C2218;padding-top:20px;display:flex;justify-content:space-between;align-items:center}
 .footer-bottom span{font-size:11px;color:#5A4E40}
-
+ 
 /* ===================== INNER PAGE HERO ===================== */
 .page-hero{background:var(--dk);padding:72px 48px}
 .page-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.page-hero h1{font-family:'Syne',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1;margin-bottom:16px}
+.page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1;margin-bottom:16px}
 .page-hero h1 em{color:var(--o);font-style:normal}
 .page-hero-desc{font-size:14px;color:#7A6E60;line-height:1.7;margin-bottom:28px}
-
+ 
 /* ===================== PRICING ===================== */
 .pricing-section{padding:88px 48px;background:white}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-.price-card{border:1px solid var(--bd);border-radius:12px;padding:32px 28px;background:var(--cr)}
-.price-card.featured{border:2px solid var(--o);background:white}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.price-card{border:1px solid var(--bd);border-radius:20px;padding:36px 32px;background:var(--cr);transition:box-shadow .25s,transform .25s}
+.price-card.featured{border:2px solid var(--o);background:white;box-shadow:0 8px 40px rgba(232,82,26,.12)}
 .price-feat-badge{background:#FFF0E8;color:#993C1D;font-size:11px;font-weight:600;padding:4px 12px;border-radius:100px;display:inline-block;margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase}
-.price-card h3{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--dk);margin-bottom:8px}
-.price{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;color:var(--dk);margin:12px 0 4px;letter-spacing:-1px}
+.price-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:var(--dk);margin-bottom:8px}
+.price{font-family:'Plus Jakarta Sans',sans-serif;font-size:36px;font-weight:800;color:var(--dk);margin:12px 0 4px;letter-spacing:-1px}
 .price small{font-size:14px;font-weight:400;color:var(--mt)}
 .price-desc{font-size:12px;color:var(--mt);margin-bottom:24px;line-height:1.5}
 .price-feats{display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
 .pf{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--dk);line-height:1.4}
 .pf-check{color:var(--o);font-size:14px;flex-shrink:0;margin-top:1px}
-
+ 
 /* ===================== COMO FUNCIONA ===================== */
 .como-hero{background:var(--dk);padding:72px 48px;text-align:center}
-.como-hero h1{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:16px}
+.como-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:52px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:16px}
 .como-hero h1 em{color:var(--o);font-style:normal}
 .como-hero p{font-size:15px;color:#7A6E60;max-width:480px;margin:0 auto;line-height:1.7}
 .timeline-section{padding:88px 48px;background:var(--cr)}
@@ -274,47 +273,49 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .tl-item{display:grid;grid-template-columns:60px 1fr;gap:24px;margin-bottom:48px;position:relative}
 .tl-item::before{content:'';position:absolute;left:28px;top:56px;width:2px;height:calc(100% + 16px);background:var(--bd)}
 .tl-item:last-child::before{display:none}
-.tl-num{width:56px;height:56px;background:var(--o);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;color:white;flex-shrink:0;position:relative;z-index:1}
+.tl-num{width:56px;height:56px;background:var(--o);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:white;flex-shrink:0;position:relative;z-index:1}
 .tl-content{padding-top:8px}
-.tl-content h3{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--dk);margin-bottom:8px;letter-spacing:-.5px}
+.tl-content h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:700;color:var(--dk);margin-bottom:8px;letter-spacing:-.5px}
 .tl-content > p{font-size:14px;color:var(--mt);line-height:1.7;margin-bottom:12px}
 .tl-detail{background:white;border-radius:10px;padding:20px;border:1px solid var(--bd)}
 .tl-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tl-di{font-size:12px;color:#5A4E40;display:flex;align-items:center;gap:7px}
 .tl-di i{color:var(--o);font-size:13px;flex-shrink:0}
 .garantias-section{padding:88px 48px;background:white}
-.gar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
-.gar-card{padding:32px 28px;background:var(--cr);border-radius:12px;border:1px solid var(--bd)}
-.gar-ic{font-size:28px;color:var(--o);margin-bottom:16px}
-.gar-card h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--dk);margin-bottom:8px}
-.gar-card p{font-size:13px;color:var(--mt);line-height:1.6}
+.gar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.gar-card{padding:40px 36px;background:var(--cr);border-radius:20px;border:1px solid var(--bd);transition:box-shadow .25s,transform .25s}
+.gar-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+.gar-ic{width:52px;height:52px;background:#FFF0E8;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.gar-ic i{font-size:24px;color:var(--o)}
+.gar-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:700;color:var(--dk);margin-bottom:10px;letter-spacing:-.3px}
+.gar-card p{font-size:13.5px;color:var(--mt);line-height:1.7}
 .faq-section{padding:88px 48px;background:var(--cr)}
 .faq-list{max-width:680px;margin:48px auto 0}
 .faq-item{border-bottom:1px solid var(--bd);padding:20px 0;cursor:pointer}
 .faq-q{display:flex;justify-content:space-between;align-items:center}
-.faq-q span{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--dk)}
+.faq-q span{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:600;color:var(--dk)}
 .faq-q i{font-size:18px;color:var(--o);transition:transform .3s}
 .faq-a{font-size:13px;color:var(--mt);line-height:1.7;margin-top:12px;display:none}
 .faq-item.open .faq-a{display:block}
 .faq-item.open .faq-q i{transform:rotate(180deg)}
-
+ 
 /* ===================== FINANCIACION ===================== */
 .fin-hero{background:var(--dk);padding:72px 48px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.fin-hero h1{font-family:'Syne',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1.05;margin-bottom:16px}
+.fin-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1.05;margin-bottom:16px}
 .fin-hero h1 em{color:var(--o);font-style:normal}
 .fin-hero > div > p{font-size:14px;color:#7A6E60;line-height:1.7;margin-bottom:28px}
 .calc-card{background:#221C16;border-radius:16px;padding:36px 32px}
-.calc-ttl{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--cr);margin-bottom:20px}
+.calc-ttl{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:var(--cr);margin-bottom:20px}
 .calc-sw{margin-bottom:20px}
 .calc-lbl{display:flex;justify-content:space-between;font-size:12px;color:#6A5E50;margin-bottom:8px}
-.calc-val{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--o)}
+.calc-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;color:var(--o)}
 .calc-slider{width:100%;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:#3D3020;outline:none;cursor:pointer}
 .calc-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--o);cursor:pointer}
 .calc-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--o);cursor:pointer;border:none}
 .calc-results{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
 .calc-ri{background:#2C2218;border-radius:8px;padding:14px 16px}
 .calc-ri-lbl{font-size:11px;color:#6A5E50;text-transform:uppercase;letter-spacing:.5px}
-.calc-ri-val{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--cr);margin-top:4px}
+.calc-ri-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:var(--cr);margin-top:4px}
 .calc-ri-val.accent{color:var(--o)}
 .fin-opts-section{padding:88px 48px;background:var(--cr)}
 .fin-opts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
@@ -322,16 +323,16 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .fin-opt.best{border:2px solid var(--o)}
 .fin-opt-ic{width:44px;height:44px;background:#FFF0E8;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .fin-opt-ic i{font-size:20px;color:var(--o)}
-.fin-opt h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--dk);margin-bottom:8px}
+.fin-opt h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:var(--dk);margin-bottom:8px}
 .fin-opt > p{font-size:12px;color:var(--mt);line-height:1.6;margin-bottom:20px}
 .fin-hl{font-size:12px;color:var(--dk);display:flex;align-items:center;gap:7px;margin-bottom:6px}
 .fin-hl-dot{width:4px;height:4px;background:var(--o);border-radius:50%;flex-shrink:0}
 .trust-section{padding:88px 48px;background:white}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
 .trust-item{text-align:center;padding:28px 20px;background:var(--cr);border-radius:12px;border:1px solid var(--bd)}
-.trust-num{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:var(--o)}
+.trust-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;color:var(--o)}
 .trust-lbl{font-size:12px;color:var(--mt);margin-top:4px;line-height:1.5}
-
+ 
 /* ===================== RESPONSIVE ===================== */
 @media(max-width:768px){
   nav{padding:14px 20px}
@@ -357,24 +358,23 @@ footer{background:var(--dk);padding:56px 48px 28px}
 </style>
 </head>
 <body>
-
+ 
 <nav>
-  <a class="logo" onclick="goPage('home')">bric<span>k</span>o</a>
+  <a class="logo" onclick="goPage('home')"><img src="bricko_logo.png" alt="Bricko" style="height:32px;width:auto;filter:brightness(0) invert(1)"></a>
   <div class="nav-links">
     <a onclick="goPage('banos')" id="nav-banos">Baños</a>
     <a onclick="goPage('cocinas')" id="nav-cocinas">Cocinas</a>
     <a onclick="goPage('como')" id="nav-como">Cómo funciona</a>
-    <a onclick="goPage('financiacion')" id="nav-fin">Financiación</a>
     <a onclick="goPage('contacto')" id="nav-contacto">Contacto</a>
   </div>
   <button class="nav-cta" onclick="goPage('contacto')">Pedir presupuesto</button>
 </nav>
-
+ 
 <!-- ============================================================ -->
 <!-- PAGE: HOME -->
 <!-- ============================================================ -->
 <div class="page active" id="page-home">
-
+ 
   <div class="hero">
     <div class="hero-left">
       <div class="hero-badge">Reformas sin estrés</div>
@@ -391,10 +391,10 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <!-- Ejemplo: <div class="ba-left-p"><img src="fotos/bano-antes.jpg" alt="Antes"></div> -->
       <div class="before-after" id="ba-hero" style="height:360px">
         <div class="ba-panel ba-left-p" id="ba-h-l">
-          <img src="foto_antes.jpeg" alt="Baño antes de la reforma" style="position:absolute;top:0;left:0;width:200%;height:100%;object-fit:cover;object-position:left center">
+          <img src="Baño_1_sin_reformar.jpg" alt="Baño antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="ba-panel ba-right-p" id="ba-h-r">
-          <img src="foto_despues.jpeg" alt="Baño después de la reforma" style="position:absolute;top:0;right:0;width:200%;height:100%;object-fit:cover;object-position:right center">
+          <img src="Baño_1.jpg" alt="Baño después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
         </div>
         <div class="ba-divider" id="ba-h-div"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span>
@@ -407,24 +407,22 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <div class="ticker">
     <div class="ticker-inner">
       <span>Baños en 5 días</span><span class="tick-dot">✦</span>
       <span>Cocinas en menos de 7</span><span class="tick-dot">✦</span>
       <span>Sin sorpresas</span><span class="tick-dot">✦</span>
       <span>Presupuesto en 24h</span><span class="tick-dot">✦</span>
-      <span>Financiación disponible</span><span class="tick-dot">✦</span>
       <span>Garantía 2 años</span><span class="tick-dot">✦</span>
       <span>Baños en 5 días</span><span class="tick-dot">✦</span>
       <span>Cocinas en menos de 7</span><span class="tick-dot">✦</span>
       <span>Sin sorpresas</span><span class="tick-dot">✦</span>
       <span>Presupuesto en 24h</span><span class="tick-dot">✦</span>
-      <span>Financiación disponible</span><span class="tick-dot">✦</span>
       <span>Garantía 2 años</span><span class="tick-dot">✦</span>
     </div>
   </div>
-
+ 
   <div class="srv-section">
     <div class="sec-lbl">Nuestros servicios</div>
     <div class="sec-ttl" style="font-size:38px">Lo que hacemos<br>mejor que nadie.</div>
@@ -463,7 +461,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <div class="proc-section">
     <div class="sec-lbl" style="color:var(--o)">El proceso</div>
     <div class="sec-ttl" style="color:var(--cr);font-size:38px">Así de fácil es reformar<br>con Bricko.</div>
@@ -474,21 +472,21 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="step"><div class="step-n">04</div><h4>Entregamos y listo</h4><p>Revisión final, limpieza y garantía de 2 años. Baños en 5 días. Cocinas en menos de 7.</p></div>
     </div>
   </div>
-
+ 
   <!-- GALLERY HOME: 3 obras antes/después -->
   <div class="gallery-section">
     <div class="sec-lbl">Trabajos recientes</div>
     <div class="sec-ttl" style="font-size:38px">Resultados que<br>hablan por sí solos.</div>
     <div class="gallery-grid">
-
+ 
       <div class="obra-card">
         <!-- OBRA 1 -->
         <div class="obra-ba" id="g1">
           <div class="ba-panel ba-left-p" id="g1-l">
-            <img src="foto_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:200%;height:100%;object-fit:cover;object-position:left center">
+            <img src="Baño_1_sin_reformar.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
           </div>
           <div class="ba-panel ba-right-p" id="g1-r">
-            <img src="foto_despues.jpeg" alt="Después" style="position:absolute;top:0;right:0;width:200%;height:100%;object-fit:cover;object-position:right center">
+            <img src="Baño_1.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
           </div>
           <div class="ba-divider" id="g1-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -499,14 +497,14 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <p>Reforma integral con plato de ducha, sanitarios suspendidos y microcemento.</p>
         </div>
       </div>
-
+ 
       <div class="obra-card">
         <div class="obra-ba" id="g2">
           <div class="ba-panel ba-left-p" id="g2-l">
-            <img src="foto_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:200%;height:100%;object-fit:cover;object-position:left center">
+            <img src="Baño_2.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
           </div>
           <div class="ba-panel ba-right-p" id="g2-r">
-            <img src="foto_despues.jpeg" alt="Después" style="position:absolute;top:0;right:0;width:200%;height:100%;object-fit:cover;object-position:right center">
+            <img src="Baño_2_reformado.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
           </div>
           <div class="ba-divider" id="g2-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -517,14 +515,14 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <p>Redistribución completa, isla central y electrodomésticos integrados.</p>
         </div>
       </div>
-
+ 
       <div class="obra-card">
         <div class="obra-ba" id="g3">
           <div class="ba-panel ba-left-p" id="g3-l">
-            <img src="foto_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:200%;height:100%;object-fit:cover;object-position:left center">
+            <img src="Baño_3 .jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
           </div>
           <div class="ba-panel ba-right-p" id="g3-r">
-            <img src="foto_despues.jpeg" alt="Después" style="position:absolute;top:0;right:0;width:200%;height:100%;object-fit:cover;object-position:right center">
+            <img src="Baño_3_reformado.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
           </div>
           <div class="ba-divider" id="g3-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -535,44 +533,20 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <p>Bañera exenta, doble lavabo empotrado y suelo porcelánico gran formato.</p>
         </div>
       </div>
-
+ 
     </div>
   </div>
-
+ 
   <div class="testi-section">
     <div class="sec-lbl">Opiniones reales</div>
     <div class="sec-ttl" style="font-size:38px">Lo que dicen<br>nuestros clientes.</div>
     <div class="testi-grid">
       <div class="testi-card"><div class="testi-stars">★★★★★</div><p>"Quedé alucinada con el resultado. En 5 días tenía el baño completamente nuevo. El equipo fue puntual y ordenado, y el diseño es exactamente lo que quería."</p><div class="testi-author"><div class="testi-av">ML</div><div><div class="testi-name">María L.</div><div class="testi-loc">Madrid · Reforma de baño</div></div></div></div>
       <div class="testi-card"><div class="testi-stars">★★★★★</div><p>"El presupuesto cerrado fue lo que me convenció. Nada de sorpresas al final. La cocina quedó espectacular y en menos de 7 días la teníamos lista para usar."</p><div class="testi-author"><div class="testi-av">JR</div><div><div class="testi-name">Jordi R.</div><div class="testi-loc">Barcelona · Reforma de cocina</div></div></div></div>
-      <div class="testi-card"><div class="testi-stars">★★★★★</div><p>"Hicimos baño y cocina a la vez. En un mes teníamos el piso como nuevo. La financiación sin intereses fue un plus enorme. Muy recomendables."</p><div class="testi-author"><div class="testi-av">AP</div><div><div class="testi-name">Ana P.</div><div class="testi-loc">Valencia · Baño + Cocina</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p>"Hicimos baño y cocina a la vez. En un mes teníamos el piso como nuevo. El resultado superó todas nuestras expectativas. Muy recomendables."</p><div class="testi-author"><div class="testi-av">AP</div><div><div class="testi-name">Ana P.</div><div class="testi-loc">Valencia · Baño + Cocina</div></div></div></div>
     </div>
   </div>
-
-  <div class="fin-strip">
-    <div>
-      <div class="sec-lbl">Financiación</div>
-      <div class="sec-ttl" style="font-size:36px;color:var(--cr);margin-bottom:14px">Reforma ahora,<br>paga cómodo.</div>
-      <p>No dejes que el presupuesto frene tu reforma. Con nuestras opciones de financiación puedes empezar hoy.</p>
-      <div class="fin-pills">
-        <span class="pill">Sin intereses hasta 12 meses</span>
-        <span class="pill">Cuotas desde 89€/mes</span>
-        <span class="pill">Tramitación en 24h</span>
-        <span class="pill">Sin entrada obligatoria</span>
-      </div>
-      <button class="btn-p" style="margin-top:28px" onclick="goPage('financiacion')">Calcular mi financiación →</button>
-    </div>
-    <div class="fin-card-dark">
-      <div style="font-size:11px;color:#6A5E50;text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px">Ejemplo real</div>
-      <div style="font-family:'Syne',sans-serif;font-size:44px;font-weight:800;color:var(--cr);letter-spacing:-2px">3.500€</div>
-      <div style="font-size:12px;color:#6A5E50;margin-bottom:20px">Reforma de baño completo</div>
-      <div class="fin-row"><span class="fin-rl">Cuota mensual</span><span class="fin-rv">292€/mes</span></div>
-      <div class="fin-row"><span class="fin-rl">Plazo</span><span class="fin-rv">12 meses</span></div>
-      <div class="fin-row"><span class="fin-rl">Intereses</span><span class="fin-rv green">0% TAE</span></div>
-      <div class="fin-row"><span class="fin-rl">Total a pagar</span><span class="fin-rv">3.500€</span></div>
-    </div>
-  </div>
-
+ 
   <div class="contact-section">
     <div class="sec-lbl" style="text-align:center">Contacto</div>
     <div class="sec-ttl" style="font-size:38px;text-align:center;margin-bottom:56px">¿Listo para empezar?</div>
@@ -604,25 +578,25 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <footer>
     <div class="footer-top">
       <div>
-        <div class="footer-logo">bric<span>k</span>o</div>
+        <div class="footer-logo"><img src="bricko_logo.png" alt="Bricko" style="height:36px;width:auto;filter:brightness(0) invert(1)"></div>
         <p class="footer-tagline">Reformas de baños y cocinas con diseño, calidad y sin complicaciones.</p>
       </div>
       <div class="footer-cols">
-        <div class="footer-col"><h5>Servicios</h5><a onclick="goPage('banos')">Reforma de baño</a><a onclick="goPage('cocinas')">Reforma de cocina</a><a onclick="goPage('financiacion')">Financiación</a></div>
+        <div class="footer-col"><h5>Servicios</h5><a onclick="goPage('banos')">Reforma de baño</a><a onclick="goPage('cocinas')">Reforma de cocina</a></div>
         <div class="footer-col"><h5>Empresa</h5><a onclick="goPage('como')">Cómo funciona</a><a onclick="goPage('home')">Inicio</a><a onclick="goPage('contacto')">Contacto</a></div>
         <div class="footer-col"><h5>Legal</h5><a>Política de privacidad</a><a>Aviso legal</a><a>Cookies</a></div>
       </div>
     </div>
     <div class="footer-bottom"><span>© 2025 Bricko. Todos los derechos reservados.</span><span>Reformas sin estrés</span></div>
   </footer>
-
+ 
 </div><!-- /page-home -->
-
-
+ 
+ 
 <!-- ============================================================ -->
 <!-- PAGE: BAÑOS -->
 <!-- ============================================================ -->
@@ -635,22 +609,21 @@ footer{background:var(--dk);padding:56px 48px 28px}
         <p class="page-hero-desc">Diseñamos y ejecutamos la reforma completa de tu baño en solo 5 días. Desde el primer plano hasta la última baldosa. Precio cerrado, plazo garantizado.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap">
           <button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis</button>
-          <button class="btn-g" onclick="goPage('financiacion')">Ver financiación</button>
         </div>
       </div>
       <div class="before-after" id="ba-banos" style="height:320px;border-radius:10px">
         <div class="ba-panel ba-left-p" id="ba-ban-l">
-          <img src="foto_antes.jpeg" alt="Baño antes" style="position:absolute;top:0;left:0;width:200%;height:100%;object-fit:cover;object-position:left center">
+          <img src="Baño_2.jpeg" alt="Baño antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="ba-panel ba-right-p" id="ba-ban-r">
-          <img src="foto_despues.jpeg" alt="Baño después" style="position:absolute;top:0;right:0;width:200%;height:100%;object-fit:cover;object-position:right center">
+          <img src="Baño_2_reformado.jpg" alt="Baño después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
         </div>
         <div class="ba-divider" id="ba-ban-d"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
     </div>
   </div>
-
+ 
   <div class="pricing-section">
     <div class="sec-lbl">Tarifas</div>
     <div class="sec-ttl" style="font-size:36px">Elige el tipo de reforma<br>que se adapta a ti.</div>
@@ -699,13 +672,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Quieres reformar tu baño?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratuito →</button></div>
   </div>
-
+ 
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -713,8 +686,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </footer>
 </div><!-- /page-banos -->
-
-
+ 
+ 
 <!-- ============================================================ -->
 <!-- PAGE: COCINAS -->
 <!-- ============================================================ -->
@@ -727,22 +700,21 @@ footer{background:var(--dk);padding:56px 48px 28px}
         <p class="page-hero-desc">Diseñamos tu nueva cocina desde cero y la ejecutamos en tiempo récord. Distribución, muebles, encimera, electrodomésticos y acabados. Todo coordinado para que en menos de una semana tengas tu cocina nueva.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap">
           <button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis</button>
-          <button class="btn-g" onclick="goPage('financiacion')">Ver financiación</button>
         </div>
       </div>
       <div class="before-after" id="ba-coc" style="height:320px;border-radius:10px">
         <div class="ba-panel ba-left-p" id="ba-coc-l">
-          <img src="foto_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:200%;height:100%;object-fit:cover;object-position:left center">
+          <img src="Baño_3 .jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="ba-panel ba-right-p" id="ba-coc-r">
-          <img src="foto_despues.jpeg" alt="Después" style="position:absolute;top:0;right:0;width:200%;height:100%;object-fit:cover;object-position:right center">
+          <img src="Baño_3_reformado.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
         </div>
         <div class="ba-divider" id="ba-coc-d"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
     </div>
   </div>
-
+ 
   <div class="pricing-section">
     <div class="sec-lbl">Tarifas</div>
     <div class="sec-ttl" style="font-size:36px">Encuentra el pack<br>que necesitas.</div>
@@ -790,13 +762,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Quieres reformar tu cocina?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratuito →</button></div>
   </div>
-
+ 
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -804,8 +776,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </footer>
 </div><!-- /page-cocinas -->
-
-
+ 
+ 
 <!-- ============================================================ -->
 <!-- PAGE: CÓMO FUNCIONA -->
 <!-- ============================================================ -->
@@ -815,7 +787,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
     <h1>Así de fácil es<br>reformar <em>con Bricko.</em></h1>
     <p>Un proceso claro, sin sorpresas y con un equipo que te acompaña en cada paso.</p>
   </div>
-
+ 
   <div class="timeline-section">
     <div class="sec-lbl" style="text-align:center">Paso a paso</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center">Del formulario a la entrega.</div>
@@ -855,7 +827,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
             <div class="tl-di"><i class="ti ti-check"></i>Contrato claro</div>
             <div class="tl-di"><i class="ti ti-truck"></i>Gestión de materiales</div>
             <div class="tl-di"><i class="ti ti-calendar"></i>Fecha de inicio fija</div>
-            <div class="tl-di"><i class="ti ti-credit-card"></i>Financiación disponible</div>
+            
           </div></div>
         </div>
       </div>
@@ -887,7 +859,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <div class="garantias-section">
     <div class="sec-lbl" style="text-align:center">Garantías</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center">Por qué elegir Bricko.</div>
@@ -897,10 +869,9 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-shield-check"></i></div><h3>Garantía 2 años</h3><p>Cualquier incidencia relacionada con la reforma en 2 años la resolvemos nosotros, sin coste.</p></div>
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-users"></i></div><h3>Equipo propio</h3><p>Sin subcontratas. Nuestros profesionales son de plantilla, formados y con seguro de responsabilidad civil.</p></div>
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-eye"></i></div><h3>Transparencia total</h3><p>Fotos diarias, acceso al jefe de obra y actualizaciones constantes. Tú siempre sabes qué pasa.</p></div>
-      <div class="gar-card"><div class="gar-ic"><i class="ti ti-credit-card"></i></div><h3>Financiación sin intereses</h3><p>Hasta 12 meses sin intereses para que la reforma no pese en el presupuesto familiar.</p></div>
-    </div>
+      
   </div>
-
+ 
   <div class="faq-section">
     <div class="sec-lbl" style="text-align:center">FAQ</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center;margin-bottom:0">Preguntas frecuentes.</div>
@@ -910,17 +881,15 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Tengo que estar en casa durante las obras?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">No es necesario. Te pedimos acceso al principio y acordamos una forma cómoda de entrada y salida. Recibirás fotos diarias del avance.</p></div>
       <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Los precios incluyen los materiales?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Sí, todos nuestros presupuestos son llave en mano: incluyen materiales, mano de obra, gestión y limpieza final. El precio que te damos es lo que pagas al final.</p></div>
       <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Puedo elegir los materiales y azulejos?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Por supuesto. Nuestro diseñador te guía en la selección según tu gusto y presupuesto. También podemos acompañarte a showrooms de proveedores.</p></div>
-      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Cómo funciona la financiación?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Trabajamos con financiación hasta 12 meses sin intereses. La tramitación es en 24 horas. Puedes calcular tu cuota en nuestra calculadora antes de comprometerte.</p></div>
-      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Qué pasa si aparece un problema oculto durante la obra?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Te informamos de inmediato, te presentamos opciones y acordamos juntos cómo proceder. Si hay un sobrecoste, siempre requiere tu aprobación previa.</p></div>
-    </div>
+      
   </div>
-
+ 
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Empezamos tu reforma?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis →</button></div>
   </div>
-
+ 
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -928,106 +897,21 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </footer>
 </div><!-- /page-como -->
-
-
-<!-- ============================================================ -->
-<!-- PAGE: FINANCIACIÓN -->
-<!-- ============================================================ -->
-<div class="page" id="page-financiacion">
-  <div class="fin-hero">
-    <div>
-      <div class="sec-lbl">Financiación</div>
-      <h1>Reforma ahora,<br><em>paga cómodo.</em></h1>
-      <p>No dejes que el presupuesto frene tu reforma. Con nuestras opciones de financiación puedes empezar hoy y pagar en cuotas adaptadas a ti.</p>
-      <button class="btn-p" onclick="goPage('contacto')">Quiero financiar mi reforma</button>
-    </div>
-    <div class="calc-card">
-      <div class="calc-ttl">Calcula tu cuota mensual</div>
-      <div class="calc-sw">
-        <div class="calc-lbl"><span>Importe de la reforma</span><span class="calc-val" id="cv-imp">6.000€</span></div>
-        <input type="range" class="calc-slider" id="c-imp" min="2000" max="20000" step="500" value="6000">
-      </div>
-      <div class="calc-sw">
-        <div class="calc-lbl"><span>Plazo de financiación</span><span class="calc-val" id="cv-pla">12 meses</span></div>
-        <input type="range" class="calc-slider" id="c-pla" min="6" max="60" step="6" value="12">
-      </div>
-      <div class="calc-results">
-        <div class="calc-ri"><div class="calc-ri-lbl">Cuota mensual</div><div class="calc-ri-val accent" id="cv-cuota">500€/mes</div></div>
-        <div class="calc-ri"><div class="calc-ri-lbl">Intereses</div><div class="calc-ri-val" id="cv-int" style="color:#1D9E75;font-size:18px">0% (≤12m)</div></div>
-        <div class="calc-ri"><div class="calc-ri-lbl">Total a pagar</div><div class="calc-ri-val" id="cv-total">6.000€</div></div>
-        <div class="calc-ri"><div class="calc-ri-lbl">Plazo</div><div class="calc-ri-val" id="cv-plazo">12 meses</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fin-opts-section">
-    <div class="sec-lbl">Opciones</div>
-    <div class="sec-ttl" style="font-size:36px">Elige la opción<br>que te va mejor.</div>
-    <div class="fin-opts-grid">
-      <div class="fin-opt best">
-        <div style="background:#FFF0E8;color:#993C1D;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;display:inline-block;margin-bottom:14px;letter-spacing:.5px;text-transform:uppercase">Más elegido</div>
-        <div class="fin-opt-ic"><i class="ti ti-calendar"></i></div>
-        <h3>Sin intereses 12 meses</h3>
-        <p>La opción más popular. Paga en cómodas cuotas mensuales sin ningún coste adicional.</p>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>0% TAE real</div>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Tramitación en 24h</div>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Sin entrada obligatoria</div>
-      </div>
-      <div class="fin-opt">
-        <div class="fin-opt-ic"><i class="ti ti-cash"></i></div>
-        <h3>Pago aplazado hasta 48m</h3>
-        <p>Reforma grande o presupuesto ajustado. Amplía el plazo hasta 4 años con condiciones preferentes.</p>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Desde 89€/mes</div>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>TIN muy competitivo</div>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Cancelación anticipada gratis</div>
-      </div>
-      <div class="fin-opt">
-        <div class="fin-opt-ic"><i class="ti ti-home"></i></div>
-        <h3>Pago al contado</h3>
-        <p>Prefiero pagarlo todo de una vez y no tener compromisos mensuales.</p>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Descuento especial 3%</div>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Factura inmediata</div>
-        <div class="fin-hl"><div class="fin-hl-dot"></div>Sin papeleo</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="trust-section">
-    <div class="sec-lbl" style="text-align:center">Confianza</div>
-    <div class="sec-ttl" style="font-size:36px;text-align:center">Números que nos avalan.</div>
-    <div class="trust-grid">
-      <div class="trust-item"><div class="trust-num">+200</div><div class="trust-lbl">Reformas financiadas con éxito</div></div>
-      <div class="trust-item"><div class="trust-num">98%</div><div class="trust-lbl">Aprobaciones de financiación</div></div>
-      <div class="trust-item"><div class="trust-num">24h</div><div class="trust-lbl">Tiempo de tramitación</div></div>
-      <div class="trust-item"><div class="trust-num">0€</div><div class="trust-lbl">Costes de gestión</div></div>
-    </div>
-  </div>
-
-  <div class="contact-section" style="background:var(--dk)">
-    <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Hablamos de tu financiación?</div>
-    <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Un asesor te explica todas las opciones sin compromiso.</p>
-    <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir información →</button></div>
-  </div>
-
-  <footer>
-    <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
-      <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
-      <button class="nav-cta" onclick="goPage('home')" style="font-size:11px;padding:6px 14px">← Volver al inicio</button>
-    </div>
-  </footer>
-</div><!-- /page-financiacion -->
-
-
+ 
+ 
+ 
+ 
+ 
 <!-- ============================================================ -->
 <!-- PAGE: CONTACTO -->
 <!-- ============================================================ -->
 <div class="page" id="page-contacto">
   <div style="background:var(--dk);padding:60px 48px;text-align:center">
     <div class="hero-badge" style="margin:0 auto 16px">Presupuesto gratis</div>
-    <h1 style="font-family:'Syne',sans-serif;font-size:48px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:12px;line-height:1.1">¿Empezamos<br><span style="color:var(--o)">tu reforma?</span></h1>
+    <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:48px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:12px;line-height:1.1">¿Empezamos<br><span style="color:var(--o)">tu reforma?</span></h1>
     <p style="font-size:15px;color:#7A6E60;max-width:420px;margin:0 auto;line-height:1.7">Cuéntanos tu proyecto. Un asesor te contactará en menos de 24 horas con toda la información.</p>
   </div>
-
+ 
   <div class="contact-section" style="padding-top:60px">
     <div class="contact-inner">
       <div class="contact-left">
@@ -1086,15 +970,15 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
+ 
   <footer>
     <div class="footer-top">
       <div>
-        <div class="footer-logo">bric<span>k</span>o</div>
+        <div class="footer-logo"><img src="bricko_logo.png" alt="Bricko" style="height:36px;width:auto;filter:brightness(0) invert(1)"></div>
         <p class="footer-tagline">Reformas de baños y cocinas con diseño, calidad y sin complicaciones.</p>
       </div>
       <div class="footer-cols">
-        <div class="footer-col"><h5>Servicios</h5><a onclick="goPage('banos')">Reforma de baño</a><a onclick="goPage('cocinas')">Reforma de cocina</a><a onclick="goPage('financiacion')">Financiación</a></div>
+        <div class="footer-col"><h5>Servicios</h5><a onclick="goPage('banos')">Reforma de baño</a><a onclick="goPage('cocinas')">Reforma de cocina</a></div>
         <div class="footer-col"><h5>Empresa</h5><a onclick="goPage('como')">Cómo funciona</a><a onclick="goPage('home')">Inicio</a></div>
         <div class="footer-col"><h5>Legal</h5><a>Privacidad</a><a>Aviso legal</a></div>
       </div>
@@ -1102,8 +986,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
     <div class="footer-bottom"><span>© 2025 Bricko. Todos los derechos reservados.</span><span>Reformas sin estrés</span></div>
   </footer>
 </div><!-- /page-contacto -->
-
-
+ 
+ 
 <!-- ============================================================ -->
 <!-- JAVASCRIPT -->
 <!-- ============================================================ -->
@@ -1113,11 +997,11 @@ function goPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const map = {banos:'nav-banos',cocinas:'nav-cocinas',como:'nav-como',financiacion:'nav-fin',contacto:'nav-contacto'};
+  const map = {banos:'nav-banos',cocinas:'nav-cocinas',como:'nav-como',contacto:'nav-contacto'};
   if (map[id]) document.getElementById(map[id]).classList.add('active');
   window.scrollTo(0, 0);
 }
-
+ 
 /* ---- BEFORE/AFTER SLIDER ---- */
 function initBA(wrapperId, divId, leftId, rightId) {
   const w = document.getElementById(wrapperId);
@@ -1125,6 +1009,9 @@ function initBA(wrapperId, divId, leftId, rightId) {
   const l = document.getElementById(leftId);
   const r = document.getElementById(rightId);
   if (!w || !d || !l || !r) return;
+  // Both panels are absolutely positioned full-size; left panel clips from left, right from right
+  r.style.position = 'absolute';
+  r.style.top = '0'; r.style.right = '0'; r.style.left = 'auto';
   let drag = false;
   function set(x) {
     const rect = w.getBoundingClientRect();
@@ -1140,14 +1027,14 @@ function initBA(wrapperId, divId, leftId, rightId) {
   window.addEventListener('touchmove', e => { if (drag) set(e.touches[0].clientX); }, {passive:true});
   window.addEventListener('touchend', () => { drag = false; });
 }
-
+ 
 initBA('ba-hero','ba-h-div','ba-h-l','ba-h-r');
 initBA('ba-banos','ba-ban-d','ba-ban-l','ba-ban-r');
 initBA('ba-coc','ba-coc-d','ba-coc-l','ba-coc-r');
 initBA('g1','g1-d','g1-l','g1-r');
 initBA('g2','g2-d','g2-l','g2-r');
 initBA('g3','g3-d','g3-l','g3-r');
-
+ 
 /* ---- FINANCING CALCULATOR ---- */
 const impEl = document.getElementById('c-imp');
 const plaEl = document.getElementById('c-pla');
@@ -1172,7 +1059,7 @@ if (impEl && plaEl) {
   plaEl.addEventListener('input', updateCalc);
   updateCalc();
 }
-
+ 
 /* ---- CONTACT FORM ---- */
 function handleSubmit(e) {
   e.preventDefault();
@@ -1181,7 +1068,7 @@ function handleSubmit(e) {
   btn.disabled = true;
   /*
     INTEGRACIÓN DEL FORMULARIO — elige una opción:
-
+ 
     OPCIÓN A — Formspree (recomendado, gratis hasta 50 envíos/mes):
       1. Ve a formspree.io y crea una cuenta
       2. Crea un formulario y copia tu ID (ej: "xpzgkqvw")
@@ -1190,11 +1077,11 @@ function handleSubmit(e) {
          por:
          <form id="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
          y borra este script handleSubmit
-
+ 
     OPCIÓN B — Typeform embed:
       1. Crea tu formulario en typeform.com
       2. Sustituye todo el <form> por el código embed de Typeform
-
+ 
     OPCIÓN C — WhatsApp directo (más sencillo):
       Cambia el botón de submit por:
       <a href="https://wa.me/34TUNUMERO?text=Hola,%20quiero%20pedir%20presupuesto" class="form-sub" style="display:block;text-align:center;text-decoration:none">
@@ -1208,6 +1095,7 @@ function handleSubmit(e) {
   }, 1000);
 }
 </script>
-
+ 
 </body>
 </html>
+ 
