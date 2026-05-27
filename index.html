@@ -110,12 +110,6 @@ nav{
 .ba-panel{position:absolute;top:0;height:100%;overflow:hidden}
 .ba-left-p{left:0;width:50%}
 .ba-right-p{right:0;width:50%}
-.ba-left-p img,.ba-right-p img{
-  position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;
-}
-/* SVG fallback illustrations */
-.ba-left-p svg{position:absolute;top:0;left:0;height:100%;width:100%}
-.ba-right-p svg{position:absolute;top:0;left:0;height:100%;width:100%}
 .ba-divider{
   position:absolute;top:0;width:3px;background:white;
   height:100%;left:50%;transform:translateX(-50%);z-index:10;cursor:ew-resize;
@@ -360,7 +354,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
 <body>
 
 <nav>
-  <a class="logo" onclick="goPage('home')"><img src="bricko_logo.png" alt="Bricko" style="height:32px;width:auto;filter:brightness(0) invert(1)"></a>
+  <a class="logo" onclick="goPage('home')"><img src="bricko_logo.png" alt="Bricko" style="height:42px;width:auto;filter:brightness(0) invert(1)"></a>
   <div class="nav-links">
     <a onclick="goPage('banos')" id="nav-banos">Baños</a>
     <a onclick="goPage('cocinas')" id="nav-cocinas">Cocinas</a>
@@ -510,9 +504,9 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
         </div>
         <div class="obra-info">
-          <span class="obra-tag">Cocina</span>
-          <h4>Cocina abierta · Barcelona Eixample</h4>
-          <p>Redistribución completa, isla central y electrodomésticos integrados.</p>
+          <span class="obra-tag">Baño</span>
+          <h4>Baño completo · Barcelona Sarrià</h4>
+          <p>Reforma integral con acabados modernos y materiales de primera calidad.</p>
         </div>
       </div>
 
@@ -1009,17 +1003,40 @@ function initBA(wrapperId, divId, leftId, rightId) {
   const l = document.getElementById(leftId);
   const r = document.getElementById(rightId);
   if (!w || !d || !l || !r) return;
-  // Both panels are absolutely positioned full-size; left panel clips from left, right from right
-  r.style.position = 'absolute';
-  r.style.top = '0'; r.style.right = '0'; r.style.left = 'auto';
+
+  // Get the images inside each panel
+  const imgL = l.querySelector('img');
+  const imgR = r.querySelector('img');
+
+  // Both panels cover the full container; clipping reveals one or the other
+  // Left panel: anchored left, width grows
+  // Right panel: anchored right, width grows from right side
+  // Images inside are always 100% of the CONTAINER, not the panel
+  function applyStyles() {
+    const W = w.offsetWidth;
+    const H = w.offsetHeight;
+    // Panels
+    l.style.cssText = 'position:absolute;top:0;left:0;height:100%;overflow:hidden;';
+    r.style.cssText = 'position:absolute;top:0;right:0;height:100%;overflow:hidden;';
+    // Images stretch to full container width, anchored to their side
+    if (imgL) imgL.style.cssText = 'position:absolute;top:0;left:0;width:' + W + 'px;height:100%;object-fit:cover;';
+    if (imgR) imgR.style.cssText = 'position:absolute;top:0;right:0;width:' + W + 'px;height:100%;object-fit:cover;';
+  }
+
+  applyStyles();
+  window.addEventListener('resize', applyStyles);
+
   let drag = false;
   function set(x) {
     const rect = w.getBoundingClientRect();
-    let pct = Math.max(5, Math.min(95, ((x - rect.left) / rect.width) * 100));
+    let pct = Math.max(2, Math.min(98, ((x - rect.left) / rect.width) * 100));
     d.style.left = pct + '%';
     l.style.width = pct + '%';
     r.style.width = (100 - pct) + '%';
   }
+  // Start at 50%
+  set(w.getBoundingClientRect().left + w.offsetWidth / 2);
+
   w.addEventListener('mousedown', e => { drag = true; set(e.clientX); e.preventDefault(); });
   window.addEventListener('mousemove', e => { if (drag) set(e.clientX); });
   window.addEventListener('mouseup', () => { drag = false; });
