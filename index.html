@@ -554,8 +554,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
         </div>
       </div>
       <div class="form-card">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
+        <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
         <div class="form-row-2">
-          <div class="fg" style="margin-bottom:0"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
+          <div class="fg" style="margin-bottom:0"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre"></div>
           <div class="fg" style="margin-bottom:0"><label>Teléfono</label><input type="tel" placeholder="612 345 678"></div>
         </div>
         <div class="fg"><label>Email</label><input type="email" placeholder="tu@email.com"></div>
@@ -566,8 +569,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <select><option value="">Selecciona</option><option>Lo antes posible</option><option>En 1-3 meses</option><option>En 3-6 meses</option><option>Todavía explorando</option></select>
         </div>
         <div class="fg"><label>Cuéntanos más (opcional)</label><textarea placeholder="Describe brevemente tu reforma..."></textarea></div>
-        <button class="form-sub">Quiero mi presupuesto gratis →</button>
+        <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
+        <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
+        <button type="submit" class="form-sub">Quiero mi presupuesto gratis →</button>
         <p class="form-legal">Al enviar aceptas nuestra política de privacidad. Nunca compartiremos tus datos.</p>
+        </form>
       </div>
     </div>
     <!-- MAPA -->
@@ -850,7 +856,10 @@ footer{background:var(--dk);padding:56px 48px 28px}
         </div>
       </div>
       <div class="form-card">
-        <form id="contact-form" onsubmit="handleSubmit(event)">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
+          <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
+          <input type="hidden" name="from_name" value="Bricko Web">
           <div class="form-row-2">
             <div class="fg" style="margin-bottom:0"><label>Nombre *</label><input type="text" name="nombre" placeholder="Tu nombre" required></div>
             <div class="fg" style="margin-bottom:0"><label>Apellidos *</label><input type="text" name="apellidos" placeholder="Tus apellidos" required></div>
@@ -874,7 +883,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <div class="fg"><label>Cuéntanos tu reforma</label>
             <textarea name="mensaje" placeholder="Describe qué quieres cambiar, el tamaño aproximado, si tienes ideas de diseño..."></textarea>
           </div>
-          <button type="submit" class="form-sub" id="form-btn">Enviar y recibir presupuesto gratis →</button>
+          <button type="submit" class="form-sub">Enviar y recibir presupuesto gratis →</button>
           <p class="form-legal">Al enviar aceptas nuestra política de privacidad. Nunca compartiremos tus datos con terceros.</p>
         </form>
       </div>
@@ -1013,7 +1022,10 @@ function handleSubmit(e) {
       1. Ve a formspree.io y crea una cuenta
       2. Crea un formulario y copia tu ID (ej: "xpzgkqvw")
       3. Cambia la línea del form:
-         <form id="contact-form" onsubmit="handleSubmit(event)">
+         <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
+          <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
+          <input type="hidden" name="from_name" value="Bricko Web">
          por:
          <form id="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
          y borra este script handleSubmit
