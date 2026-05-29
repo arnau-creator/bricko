@@ -666,6 +666,16 @@ function goPage(id) {
   const map = {banos:'nav-banos',como:'nav-como',contacto:'nav-contacto'};
   if (map[id]) document.getElementById(map[id]).classList.add('active');
   window.scrollTo(0, 0);
+  // Reinitialize sliders after page becomes visible
+  setTimeout(() => {
+    if (id === 'banos') initBA('ba-banos','ba-ban-d','ba-ban-l','ba-ban-r');
+    if (id === 'home') {
+      initBA('ba-hero','ba-h-div','ba-h-l','ba-h-r');
+      initBA('g1','g1-d','g1-l','g1-r');
+      initBA('g2','g2-d','g2-l','g2-r');
+      initBA('g3','g3-d','g3-l','g3-r');
+    }
+  }, 50);
 }
 function initBA(wrapperId, divId, leftId, rightId) {
   const w = document.getElementById(wrapperId);
