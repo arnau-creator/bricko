@@ -11,7 +11,7 @@
 <style>
 /* ===================== RESET & BASE ===================== */
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:auto}
 body{font-family:'Instrument Sans',sans-serif;background:#F5F0E8;color:#1A1612;overflow-x:hidden}
 
 /* ===================== VARIABLES ===================== */
@@ -1142,12 +1142,17 @@ footer{background:var(--dk);padding:56px 48px 28px}
 <script>
 /* ---- NAVIGATION ---- */
 function goPage(id) {
+  // Hide all pages first
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  // Scroll to top instantly while all pages are hidden
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  // Now show the target page
   document.getElementById('page-' + id).classList.add('active');
+  // Update nav active state
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
   const map = {banos:'nav-banos',cocinas:'nav-cocinas',como:'nav-como',financiacion:'nav-fin',contacto:'nav-contacto'};
   if (map[id]) document.getElementById(map[id]).classList.add('active');
-  requestAnimationFrame(() => { window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); });
 }
 
 /* ---- BEFORE/AFTER SLIDER ---- */
