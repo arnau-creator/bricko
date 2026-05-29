@@ -14,83 +14,29 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:#F5F0E8;color:#1A1612;overflow-x:hidden}
-
-/* ===================== VARIABLES ===================== */
-:root{
-  --o:#E8521A;
-  --dk:#1A1612;
-  --cr:#F5F0E8;
-  --wm:#2C2218;
-  --mt:#8A7D6B;
-  --bd:#E0D8CC;
-  --wh:#FFFFFF;
-}
-
-/* ===================== PAGES ===================== */
-.page{display:none}
-.page.active{display:block}
-
-/* ===================== NAV ===================== */
-nav{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:18px 48px;background:var(--dk);
-  position:sticky;top:0;z-index:100;
-}
+:root{--o:#E8521A;--dk:#1A1612;--cr:#F5F0E8;--wm:#2C2218;--mt:#8A7D6B;--bd:#E0D8CC;--wh:#FFFFFF}
+.page{display:none}.page.active{display:block}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:var(--dk);position:sticky;top:0;z-index:100}
 .logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;color:var(--cr);cursor:pointer;text-decoration:none}
 .logo span{color:var(--o)}
 .nav-links{display:flex;gap:32px}
-.nav-links a{
-  font-size:12px;color:#7A6E60;text-decoration:none;
-  letter-spacing:.5px;font-weight:500;text-transform:uppercase;
-  cursor:pointer;transition:color .2s;padding:4px 0;
-  border-bottom:2px solid transparent;
-}
+.nav-links a{font-size:12px;color:#7A6E60;text-decoration:none;letter-spacing:.5px;font-weight:500;text-transform:uppercase;cursor:pointer;transition:color .2s;padding:4px 0;border-bottom:2px solid transparent}
 .nav-links a:hover,.nav-links a.active{color:var(--cr);border-bottom-color:var(--o)}
-.nav-cta{
-  background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;font-size:12px;padding:10px 22px;border-radius:4px;
-  cursor:pointer;text-transform:uppercase;letter-spacing:.5px;
-  border:none;transition:opacity .2s;
-}
+.nav-cta{background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:12px;padding:10px 22px;border-radius:4px;cursor:pointer;text-transform:uppercase;letter-spacing:.5px;border:none;transition:opacity .2s}
 .nav-cta:hover{opacity:.85}
-
-/* ===================== TYPOGRAPHY HELPERS ===================== */
 .sec-lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--o);font-weight:600;margin-bottom:14px}
 .sec-ttl{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-2px;line-height:1.04}
-.btn-p{
-  background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;font-size:14px;padding:14px 28px;border-radius:6px;
-  border:none;cursor:pointer;transition:opacity .2s;display:inline-block;
-  text-decoration:none;
-}
+.btn-p{background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:14px 28px;border-radius:6px;border:none;cursor:pointer;transition:opacity .2s;display:inline-block;text-decoration:none}
 .btn-p:hover{opacity:.85}
-.btn-g{
-  background:transparent;color:var(--dk);font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;font-size:13px;padding:14px 28px;border-radius:6px;
-  border:1.5px solid var(--bd);cursor:pointer;transition:all .2s;
-}
+.btn-g{background:transparent;color:var(--dk);font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;padding:14px 28px;border-radius:6px;border:1.5px solid var(--bd);cursor:pointer;transition:all .2s}
 .btn-g:hover{border-color:var(--o);color:var(--o)}
-
-/* ===================== TICKER ===================== */
 .ticker{background:var(--o);padding:13px 0;overflow:hidden}
-.ticker-inner{
-  display:flex;gap:50px;white-space:nowrap;
-  font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:600;
-  color:white;letter-spacing:1px;text-transform:uppercase;
-  animation:tick 22s linear infinite;
-}
+.ticker-inner{display:flex;gap:50px;white-space:nowrap;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:600;color:white;letter-spacing:1px;text-transform:uppercase;animation:tick 22s linear infinite}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .tick-dot{color:rgba(255,255,255,.35)}
-
-/* ===================== HERO ===================== */
 .hero{background:var(--dk);padding:72px 48px 0;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:end}
 .hero-left{padding-bottom:72px}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(232,82,26,.15);border:1px solid rgba(232,82,26,.3);
-  color:var(--o);font-size:11px;font-weight:500;padding:5px 14px;
-  border-radius:100px;margin-bottom:24px;letter-spacing:.5px;
-}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,82,26,.15);border:1px solid rgba(232,82,26,.3);color:var(--o);font-size:11px;font-weight:500;padding:5px 14px;border-radius:100px;margin-bottom:24px;letter-spacing:.5px}
 .hero-badge::before{content:'';width:5px;height:5px;background:var(--o);border-radius:50%}
 .hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:54px;font-weight:800;line-height:1.0;color:var(--cr);letter-spacing:-2px;margin-bottom:20px}
 .hero h1 em{color:var(--o);font-style:normal}
@@ -100,35 +46,13 @@ nav{
 .stat-b{flex:1;background:var(--cr);padding:20px 16px;text-align:center}
 .stat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:800;color:var(--dk)}
 .stat-l{font-size:11px;color:var(--mt);text-transform:uppercase;letter-spacing:.7px;margin-top:2px}
-
-/* ===================== BEFORE/AFTER ===================== */
-.before-after{
-  position:relative;overflow:hidden;
-  cursor:ew-resize;user-select:none;
-  background:var(--wm);border-radius:10px 10px 0 0;
-}
+.before-after{position:relative;overflow:hidden;cursor:ew-resize;user-select:none;background:var(--wm);border-radius:10px 10px 0 0}
 .ba-panel{position:absolute;top:0;height:100%;overflow:hidden}
-.ba-left-p{left:0;width:50%}
-.ba-right-p{right:0;width:50%}
-.ba-divider{
-  position:absolute;top:0;width:3px;background:white;
-  height:100%;left:50%;transform:translateX(-50%);z-index:10;cursor:ew-resize;
-}
-.ba-handle{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:40px;height:40px;background:white;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:14px;color:var(--dk);font-weight:700;
-}
-.ba-cap{
-  position:absolute;bottom:14px;z-index:5;
-  font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:3px;
-}
-.cap-b{left:14px;background:rgba(0,0,0,.55);color:#9A8070}
-.cap-a{right:14px;background:var(--o);color:white}
-
-/* ===================== SERVICES ===================== */
+.ba-left-p{left:0;width:50%}.ba-right-p{right:0;width:50%}
+.ba-divider{position:absolute;top:0;width:3px;background:white;height:100%;left:50%;transform:translateX(-50%);z-index:10;cursor:ew-resize}
+.ba-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--dk);font-weight:700}
+.ba-cap{position:absolute;bottom:14px;z-index:5;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:3px}
+.cap-b{left:14px;background:rgba(0,0,0,.55);color:#9A8070}.cap-a{right:14px;background:var(--o);color:white}
 .srv-section{padding:88px 48px;background:var(--cr)}
 .srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:transparent;border:none;border-radius:0;overflow:visible;margin-top:48px}
 .srv-card{background:white;padding:40px 36px;cursor:pointer;transition:background .2s,box-shadow .25s,transform .25s;position:relative;border-radius:20px;border:1px solid var(--bd)}
@@ -148,16 +72,12 @@ nav{
 .sp-num small{font-size:13px;font-weight:400;color:var(--mt)}
 .srv-arr{position:absolute;right:24px;bottom:24px;width:32px;height:32px;background:#FFF0E8;border-radius:50%;display:flex;align-items:center;justify-content:center}
 .srv-arr i{font-size:14px;color:var(--o)}
-
-/* ===================== PROCESS ===================== */
 .proc-section{background:var(--dk);padding:88px 48px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:transparent;border-radius:0;overflow:visible;margin-top:56px}
 .step{background:#221C16;padding:36px 28px;border-radius:20px}
 .step-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:44px;font-weight:800;color:rgba(232,82,26,.18);line-height:1;margin-bottom:14px}
 .step h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--cr);margin-bottom:8px}
 .step p{font-size:12px;color:#5A4E40;line-height:1.6}
-
-/* ===================== GALLERY ===================== */
 .gallery-section{padding:88px 48px;background:white}
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
 .obra-card{border-radius:20px;overflow:hidden;background:var(--cr);border:1px solid var(--bd);transition:box-shadow .25s,transform .25s}
@@ -166,8 +86,6 @@ nav{
 .obra-tag{display:inline-block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:100px;background:#FFF0E8;color:#993C1D;margin-bottom:8px}
 .obra-info h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--dk);margin-bottom:4px}
 .obra-info p{font-size:12px;color:var(--mt);line-height:1.5}
-
-/* ===================== TESTIMONIALS ===================== */
 .testi-section{background:var(--cr);padding:88px 48px}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
 .testi-card{background:white;border-radius:20px;padding:32px;border:1px solid var(--bd);transition:box-shadow .2s}
@@ -175,23 +93,7 @@ nav{
 .testi-card p{font-size:13px;color:#5A4E40;line-height:1.7;margin-bottom:20px;font-style:italic}
 .testi-author{display:flex;align-items:center;gap:10px}
 .testi-av{width:36px;height:36px;border-radius:50%;background:var(--o);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;color:white;flex-shrink:0}
-.testi-name{font-size:13px;font-weight:600;color:var(--dk)}
-.testi-loc{font-size:11px;color:var(--mt)}
-
-/* ===================== FINANCE STRIP ===================== */
-.fin-strip{background:var(--dk);padding:72px 48px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.fin-strip .sec-ttl{color:var(--cr);font-size:36px;margin-bottom:14px}
-.fin-strip > div > p{font-size:14px;color:#6A5E50;line-height:1.7;margin-bottom:28px}
-.fin-pills{display:flex;flex-wrap:wrap;gap:8px}
-.pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:100px;padding:8px 16px;font-size:12px;font-weight:500;color:#9A8E80}
-.fin-card-dark{background:#221C16;border-radius:16px;padding:36px 32px}
-.fin-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #2C2218}
-.fin-row:last-of-type{border-bottom:none}
-.fin-rl{font-size:12px;color:#6A5E50}
-.fin-rv{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:var(--cr)}
-.fin-rv.green{color:#1D9E75}
-
-/* ===================== CONTACT ===================== */
+.testi-name{font-size:13px;font-weight:600;color:var(--dk)}.testi-loc{font-size:11px;color:var(--mt)}
 .contact-section{padding:88px 48px;background:var(--cr)}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 .contact-left h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:38px;font-weight:800;color:var(--dk);letter-spacing:-1.5px;margin-bottom:16px;line-height:1.1}
@@ -206,24 +108,12 @@ nav{
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 .fg{margin-bottom:14px}
 .fg label{display:block;font-size:11px;font-weight:600;color:var(--dk);text-transform:uppercase;letter-spacing:.5px;margin-bottom:7px}
-.fg input,.fg select,.fg textarea{
-  width:100%;padding:12px 16px;border:1px solid var(--bd);border-radius:10px;
-  font-family:'DM Sans',sans-serif;font-size:13px;color:var(--dk);
-  background:var(--cr);outline:none;transition:border-color .2s;
-  -webkit-appearance:none;appearance:none;
-}
+.fg input,.fg select,.fg textarea{width:100%;padding:12px 16px;border:1px solid var(--bd);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--dk);background:var(--cr);outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--o);background:white}
 .fg textarea{resize:vertical;min-height:80px}
-.form-sub{
-  width:100%;background:var(--o);color:white;
-  font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;
-  padding:14px;border:none;border-radius:7px;cursor:pointer;
-  letter-spacing:.5px;text-transform:uppercase;transition:opacity .2s;margin-top:6px;
-}
+.form-sub{width:100%;background:var(--o);color:white;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:14px;border:none;border-radius:7px;cursor:pointer;letter-spacing:.5px;text-transform:uppercase;transition:opacity .2s;margin-top:6px}
 .form-sub:hover{opacity:.88}
 .form-legal{font-size:11px;color:var(--mt);text-align:center;margin-top:12px;line-height:1.5}
-
-/* ===================== FOOTER ===================== */
 footer{background:var(--dk);padding:56px 48px 28px}
 .footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px}
 .footer-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;color:var(--cr)}
@@ -235,15 +125,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .footer-col a:hover{color:var(--cr)}
 .footer-bottom{border-top:1px solid #2C2218;padding-top:20px;display:flex;justify-content:space-between;align-items:center}
 .footer-bottom span{font-size:11px;color:#5A4E40}
-
-/* ===================== INNER PAGE HERO ===================== */
 .page-hero{background:var(--dk);padding:72px 48px}
 .page-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1;margin-bottom:16px}
 .page-hero h1 em{color:var(--o);font-style:normal}
 .page-hero-desc{font-size:14px;color:#7A6E60;line-height:1.7;margin-bottom:28px}
-
-/* ===================== PRICING ===================== */
 .pricing-section{padding:88px 48px;background:white}
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
 .price-card{border:1px solid var(--bd);border-radius:20px;padding:36px 32px;background:var(--cr);transition:box-shadow .25s,transform .25s}
@@ -256,8 +142,6 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .price-feats{display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
 .pf{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--dk);line-height:1.4}
 .pf-check{color:var(--o);font-size:14px;flex-shrink:0;margin-top:1px}
-
-/* ===================== COMO FUNCIONA ===================== */
 .como-hero{background:var(--dk);padding:72px 48px;text-align:center}
 .como-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:52px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:16px}
 .como-hero h1 em{color:var(--o);font-style:normal}
@@ -292,62 +176,17 @@ footer{background:var(--dk);padding:56px 48px 28px}
 .faq-a{font-size:13px;color:var(--mt);line-height:1.7;margin-top:12px;display:none}
 .faq-item.open .faq-a{display:block}
 .faq-item.open .faq-q i{transform:rotate(180deg)}
-
-/* ===================== FINANCIACION ===================== */
-.fin-hero{background:var(--dk);padding:72px 48px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.fin-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--cr);letter-spacing:-2px;line-height:1.05;margin-bottom:16px}
-.fin-hero h1 em{color:var(--o);font-style:normal}
-.fin-hero > div > p{font-size:14px;color:#7A6E60;line-height:1.7;margin-bottom:28px}
-.calc-card{background:#221C16;border-radius:16px;padding:36px 32px}
-.calc-ttl{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:var(--cr);margin-bottom:20px}
-.calc-sw{margin-bottom:20px}
-.calc-lbl{display:flex;justify-content:space-between;font-size:12px;color:#6A5E50;margin-bottom:8px}
-.calc-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;color:var(--o)}
-.calc-slider{width:100%;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:#3D3020;outline:none;cursor:pointer}
-.calc-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--o);cursor:pointer}
-.calc-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--o);cursor:pointer;border:none}
-.calc-results{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
-.calc-ri{background:#2C2218;border-radius:8px;padding:14px 16px}
-.calc-ri-lbl{font-size:11px;color:#6A5E50;text-transform:uppercase;letter-spacing:.5px}
-.calc-ri-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:var(--cr);margin-top:4px}
-.calc-ri-val.accent{color:var(--o)}
-.fin-opts-section{padding:88px 48px;background:var(--cr)}
-.fin-opts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-.fin-opt{background:white;border-radius:12px;padding:32px 28px;border:1px solid var(--bd)}
-.fin-opt.best{border:2px solid var(--o)}
-.fin-opt-ic{width:44px;height:44px;background:#FFF0E8;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-.fin-opt-ic i{font-size:20px;color:var(--o)}
-.fin-opt h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:var(--dk);margin-bottom:8px}
-.fin-opt > p{font-size:12px;color:var(--mt);line-height:1.6;margin-bottom:20px}
-.fin-hl{font-size:12px;color:var(--dk);display:flex;align-items:center;gap:7px;margin-bottom:6px}
-.fin-hl-dot{width:4px;height:4px;background:var(--o);border-radius:50%;flex-shrink:0}
-.trust-section{padding:88px 48px;background:white}
-.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
-.trust-item{text-align:center;padding:28px 20px;background:var(--cr);border-radius:12px;border:1px solid var(--bd)}
-.trust-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;color:var(--o)}
-.trust-lbl{font-size:12px;color:var(--mt);margin-top:4px;line-height:1.5}
-
-/* ===================== RESPONSIVE ===================== */
 @media(max-width:768px){
-  nav{padding:14px 20px}
-  .nav-links{display:none}
-  .hero{grid-template-columns:1fr;padding:48px 20px 0}
-  .hero h1{font-size:36px}
-  .hero-left{padding-bottom:32px}
+  nav{padding:14px 20px}.nav-links{display:none}
+  .hero{grid-template-columns:1fr;padding:48px 20px 0}.hero h1{font-size:36px}.hero-left{padding-bottom:32px}
   .steps{grid-template-columns:1fr 1fr}
-  .srv-grid,.pricing-grid,.testi-grid,.gallery-grid,.fin-opts-grid,.gar-grid,.trust-grid{grid-template-columns:1fr}
-  .contact-inner,.fin-hero,.fin-strip,.page-hero-grid{grid-template-columns:1fr}
-  .fin-hero,.fin-strip{padding:48px 20px}
-  .contact-section,.gallery-section,.pricing-section,.srv-section,.proc-section,
-  .testi-section,.garantias-section,.faq-section,.fin-opts-section,.trust-section,
-  .timeline-section,.como-hero,.page-hero{padding:56px 20px}
+  .srv-grid,.pricing-grid,.testi-grid,.gallery-grid,.gar-grid{grid-template-columns:1fr}
+  .contact-inner,.page-hero-grid{grid-template-columns:1fr}
+  .contact-section,.gallery-section,.pricing-section,.srv-section,.proc-section,.testi-section,.garantias-section,.faq-section,.timeline-section,.como-hero,.page-hero{padding:56px 20px}
   .hero-actions{flex-direction:column;align-items:flex-start}
-  .footer-top{flex-direction:column;gap:32px}
-  .footer-cols{flex-wrap:wrap;gap:24px}
+  .footer-top{flex-direction:column;gap:32px}.footer-cols{flex-wrap:wrap;gap:24px}
   footer{padding:40px 20px 24px}
-  .tl-item{grid-template-columns:48px 1fr}
-  .tl-detail-grid{grid-template-columns:1fr}
-  .calc-results{grid-template-columns:1fr 1fr}
+  .tl-item{grid-template-columns:48px 1fr}.tl-detail-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -363,11 +202,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
   <button class="nav-cta" onclick="goPage('contacto')">Pedir presupuesto</button>
 </nav>
 
-<!-- ============================================================ -->
 <!-- PAGE: HOME -->
-<!-- ============================================================ -->
 <div class="page active" id="page-home">
-
   <div class="hero">
     <div class="hero-left">
       <div class="hero-badge">Reformas sin estrés</div>
@@ -379,19 +215,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
     <div>
-      <!-- BEFORE/AFTER HERO -->
-      <!-- Para usar fotos reales: sustituye los <div class="ba-left-p"> y <ba-right-p> por <img> con tus URLs -->
-      <!-- Ejemplo: <div class="ba-left-p"><img src="fotos/bano-antes.jpg" alt="Antes"></div> -->
       <div class="before-after" id="ba-hero" style="height:360px">
-        <div class="ba-panel ba-left-p" id="ba-h-l">
-          <img src="bano1_antes.jpg" alt="Baño antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="ba-panel ba-right-p" id="ba-h-r">
-          <img src="bano1_despues.jpg" alt="Baño después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
-        </div>
+        <div class="ba-panel ba-left-p" id="ba-h-l"><img src="bano1_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+        <div class="ba-panel ba-right-p" id="ba-h-r"><img src="bano1_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
         <div class="ba-divider" id="ba-h-div"><div class="ba-handle">⟺</div></div>
-        <span class="ba-cap cap-b">Antes</span>
-        <span class="ba-cap cap-a">Después</span>
+        <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
       <div class="stats-bar">
         <div class="stat-b"><div class="stat-n">+200</div><div class="stat-l">Reformas completadas</div></div>
@@ -409,7 +237,6 @@ footer{background:var(--dk);padding:56px 48px 28px}
       <span>Baños en 5 días</span><span class="tick-dot">✦</span>
       <span>Sin sorpresas</span><span class="tick-dot">✦</span>
       <span>Presupuesto en 24h</span><span class="tick-dot">✦</span>
-      
     </div>
   </div>
 
@@ -418,7 +245,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
     <div class="sec-ttl" style="font-size:38px">Lo que hacemos<br>mejor que nadie.</div>
     <div class="srv-grid">
       <div class="srv-card" onclick="goPage('banos')">
-        <div class="srv-ic"><i class="ti ti-bath" aria-hidden="true"></i></div>
+        <div class="srv-ic"><i class="ti ti-bath"></i></div>
         <h3>Baño Gama Media</h3>
         <p>Una reforma completa con materiales de calidad y acabados modernos. Todo incluido, sin sorpresas, en solo 5 días.</p>
         <div class="srv-feats">
@@ -427,14 +254,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <div class="sf"><div class="sf-dot"></div>Mampara y grifería moderna</div>
           <div class="sf"><div class="sf-dot"></div>Fontanería, electricidad y limpieza final</div>
         </div>
-        <div class="srv-price">
-          <div class="sp-from">Desde</div>
-          <div class="sp-num">3.800€ <small>baño completo</small></div>
-        </div>
-        <div class="srv-arr"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+        <div class="srv-price"><div class="sp-from">Desde</div><div class="sp-num">3.800€ <small>baño completo</small></div></div>
+        <div class="srv-arr"><i class="ti ti-arrow-right"></i></div>
       </div>
       <div class="srv-card" onclick="goPage('banos')">
-        <div class="srv-ic"><i class="ti ti-star" aria-hidden="true"></i></div>
+        <div class="srv-ic"><i class="ti ti-star"></i></div>
         <h3>Baño Gama Alta</h3>
         <p>Diseño exclusivo, materiales premium y acabados de lujo. El baño que siempre quisiste, entregado en 5 días.</p>
         <div class="srv-feats">
@@ -443,11 +267,8 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <div class="sf"><div class="sf-dot"></div>Grifería y muebles de diseño</div>
           <div class="sf"><div class="sf-dot"></div>Espejo LED y suelo radiante</div>
         </div>
-        <div class="srv-price">
-          <div class="sp-from">Desde</div>
-          <div class="sp-num">5.000€ <small>baño completo</small></div>
-        </div>
-        <div class="srv-arr"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+        <div class="srv-price"><div class="sp-from">Desde</div><div class="sp-num">5.000€ <small>baño completo</small></div></div>
+        <div class="srv-arr"><i class="ti ti-arrow-right"></i></div>
       </div>
     </div>
   </div>
@@ -463,67 +284,37 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
   </div>
 
-  <!-- GALLERY HOME: 3 obras antes/después -->
   <div class="gallery-section">
     <div class="sec-lbl">Trabajos recientes</div>
     <div class="sec-ttl" style="font-size:38px">Resultados que<br>hablan por sí solos.</div>
     <div class="gallery-grid">
-
       <div class="obra-card">
-        <!-- OBRA 1 -->
         <div class="obra-ba" id="g1">
-          <div class="ba-panel ba-left-p" id="g1-l">
-            <img src="bano1_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="ba-panel ba-right-p" id="g1-r">
-            <img src="bano1_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
-          </div>
+          <div class="ba-panel ba-left-p" id="g1-l"><img src="bano1_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+          <div class="ba-panel ba-right-p" id="g1-r"><img src="bano1_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
           <div class="ba-divider" id="g1-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
         </div>
-        <div class="obra-info">
-          <span class="obra-tag">Baño</span>
-          <h4>Baño completo · Barcelona Gràcia</h4>
-          <p>Reforma integral con plato de ducha, sanitarios suspendidos y microcemento.</p>
-        </div>
+        <div class="obra-info"><span class="obra-tag">Baño</span><h4>Baño completo · Barcelona Gràcia</h4><p>Reforma integral con plato de ducha, sanitarios suspendidos y microcemento.</p></div>
       </div>
-
       <div class="obra-card">
         <div class="obra-ba" id="g2">
-          <div class="ba-panel ba-left-p" id="g2-l">
-            <img src="bano2_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="ba-panel ba-right-p" id="g2-r">
-            <img src="bano2_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
-          </div>
+          <div class="ba-panel ba-left-p" id="g2-l"><img src="bano2_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+          <div class="ba-panel ba-right-p" id="g2-r"><img src="bano2_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
           <div class="ba-divider" id="g2-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
         </div>
-        <div class="obra-info">
-          <span class="obra-tag">Baño</span>
-          <h4>Baño completo · Barcelona Sarrià</h4>
-          <p>Reforma integral con acabados modernos, espejo LED y mampara de diseño.</p>
-        </div>
+        <div class="obra-info"><span class="obra-tag">Baño</span><h4>Baño completo · Barcelona Sarrià</h4><p>Reforma integral con acabados modernos, espejo LED y mampara de diseño.</p></div>
       </div>
-
       <div class="obra-card">
         <div class="obra-ba" id="g3">
-          <div class="ba-panel ba-left-p" id="g3-l">
-            <img src="bano3_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="ba-panel ba-right-p" id="g3-r">
-            <img src="bano3_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
-          </div>
+          <div class="ba-panel ba-left-p" id="g3-l"><img src="bano3_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+          <div class="ba-panel ba-right-p" id="g3-r"><img src="bano3_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
           <div class="ba-divider" id="g3-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
           <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
         </div>
-        <div class="obra-info">
-          <span class="obra-tag">Baño</span>
-          <h4>Baño suite · Barcelona Horta</h4>
-          <p>Reforma completa con ducha de lluvia, mueble suspendido y suelo porcelánico gran formato.</p>
-        </div>
+        <div class="obra-info"><span class="obra-tag">Baño</span><h4>Baño suite · Barcelona Horta</h4><p>Reforma completa con ducha de lluvia, mueble suspendido y suelo porcelánico gran formato.</p></div>
       </div>
-
     </div>
   </div>
 
@@ -545,50 +336,39 @@ footer{background:var(--dk);padding:56px 48px 28px}
         <h2>Cuéntanos<br>tu proyecto.</h2>
         <p>Rellena el formulario y un asesor te contactará en menos de 24 horas. Sin compromiso.</p>
         <div class="cinfo-list">
-          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-clock" aria-hidden="true"></i></div><div><strong>Respuesta en 24h</strong><span>Te llamamos nosotros, sin esperas</span></div></div>
-          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-file-text" aria-hidden="true"></i></div><div><strong>Presupuesto gratuito</strong><span>Sin compromiso ni letra pequeña</span></div></div>
-          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-phone" aria-hidden="true"></i></div><div><strong>Llámanos</strong><span><a href="tel:+34628348843" style="color:var(--mt);text-decoration:none">+34 628 348 843</a></span></div></div>
-          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-mail" aria-hidden="true"></i></div><div><strong>Email</strong><span><a href="mailto:jordi@brickogroup.com" style="color:var(--mt);text-decoration:none">jordi@brickogroup.com</a></span></div></div>
-          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-map-pin" aria-hidden="true"></i></div><div><strong>Dirección</strong><span>Carrer Girona 53, Principal 1<br>Barcelona</span></div></div>
-          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-world" aria-hidden="true"></i></div><div><strong>Web</strong><span><a href="https://www.brickogroup.com/" target="_blank" style="color:var(--o);text-decoration:none">www.brickogroup.com</a></span></div></div>
+          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-clock"></i></div><div><strong>Respuesta en 24h</strong><span>Te llamamos nosotros, sin esperas</span></div></div>
+          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-file-text"></i></div><div><strong>Presupuesto gratuito</strong><span>Sin compromiso ni letra pequeña</span></div></div>
+          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-phone"></i></div><div><strong>Llámanos</strong><span><a href="tel:+34628348843" style="color:var(--mt);text-decoration:none">+34 628 348 843</a></span></div></div>
+          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-mail"></i></div><div><strong>Email</strong><span><a href="mailto:jordi@brickogroup.com" style="color:var(--mt);text-decoration:none">jordi@brickogroup.com</a></span></div></div>
+          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-map-pin"></i></div><div><strong>Dirección</strong><span>Carrer Girona 53, Principal 1<br>Barcelona</span></div></div>
+          <div class="cinfo"><div class="cinfo-ic"><i class="ti ti-world"></i></div><div><strong>Web</strong><span><a href="https://www.brickogroup.com/" target="_blank" style="color:var(--o);text-decoration:none">www.brickogroup.com</a></span></div></div>
         </div>
       </div>
       <div class="form-card">
         <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
-        <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
-        <div class="form-row-2">
-          <div class="fg" style="margin-bottom:0"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre"></div>
-          <div class="fg" style="margin-bottom:0"><label>Teléfono</label><input type="tel" placeholder="612 345 678"></div>
-        </div>
-        <div class="fg"><label>Email</label><input type="email" placeholder="tu@email.com"></div>
-        <div class="fg"><label>¿Qué quieres reformar?</label>
-          <select><option value="">Selecciona una opción</option><option>Baño completo</option><option>No sé, necesito asesoramiento</option></select>
-        </div>
-        <div class="fg"><label>¿Cuándo quieres empezar?</label>
-          <select><option value="">Selecciona</option><option>Lo antes posible</option><option>En 1-3 meses</option><option>En 3-6 meses</option><option>Todavía explorando</option></select>
-        </div>
-        <div class="fg"><label>Cuéntanos más (opcional)</label><textarea placeholder="Describe brevemente tu reforma..."></textarea></div>
-        <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
-        <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
-        <button type="submit" class="form-sub">Quiero mi presupuesto gratis →</button>
-        <p class="form-legal">Al enviar aceptas nuestra política de privacidad. Nunca compartiremos tus datos.</p>
+          <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
+          <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
+          <input type="hidden" name="from_name" value="Bricko Web">
+          <div class="form-row-2">
+            <div class="fg" style="margin-bottom:0"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre"></div>
+            <div class="fg" style="margin-bottom:0"><label>Teléfono</label><input type="tel" name="telefono" placeholder="612 345 678"></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="tu@email.com"></div>
+          <div class="fg"><label>¿Qué quieres reformar?</label>
+            <select name="servicio"><option value="">Selecciona una opción</option><option>Baño completo</option><option>No sé, necesito asesoramiento</option></select>
+          </div>
+          <div class="fg"><label>¿Cuándo quieres empezar?</label>
+            <select name="cuando"><option value="">Selecciona</option><option>Lo antes posible</option><option>En 1-3 meses</option><option>En 3-6 meses</option><option>Todavía explorando</option></select>
+          </div>
+          <div class="fg"><label>Cuéntanos más (opcional)</label><textarea name="mensaje" placeholder="Describe brevemente tu reforma..."></textarea></div>
+          <button type="submit" class="form-sub">Quiero mi presupuesto gratis →</button>
+          <p class="form-legal">Al enviar aceptas nuestra política de privacidad. Nunca compartiremos tus datos.</p>
         </form>
       </div>
     </div>
-    <!-- MAPA -->
     <div style="margin-top:48px;border-radius:20px;overflow:hidden;border:1px solid var(--bd);height:360px">
-      <iframe
-        src="https://maps.google.com/maps?q=Carrer+de+Girona+53,+Barcelona&t=&z=16&ie=UTF8&iwloc=&output=embed"
-        width="100%"
-        height="360"
-        style="border:0;display:block"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <iframe src="https://maps.google.com/maps?q=Carrer+de+Girona+53,+Barcelona&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="360" style="border:0;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  </div>
   </div>
 
   <footer>
@@ -605,13 +385,9 @@ footer{background:var(--dk);padding:56px 48px 28px}
     </div>
     <div class="footer-bottom"><span>© 2025 Bricko. Todos los derechos reservados.</span><span>Reformas sin estrés</span></div>
   </footer>
-
 </div><!-- /page-home -->
 
-
-<!-- ============================================================ -->
 <!-- PAGE: BAÑOS -->
-<!-- ============================================================ -->
 <div class="page" id="page-banos">
   <div class="page-hero">
     <div class="page-hero-grid">
@@ -619,30 +395,22 @@ footer{background:var(--dk);padding:56px 48px 28px}
         <div class="sec-lbl">Reforma de baño</div>
         <h1>Tu baño nuevo<br>en <em>5 días.</em></h1>
         <p class="page-hero-desc">Diseñamos y ejecutamos la reforma completa de tu baño en solo 5 días. Desde el primer plano hasta la última baldosa. Precio cerrado, plazo garantizado.</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap">
-          <button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis</button>
-        </div>
+        <button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis</button>
       </div>
       <div class="before-after" id="ba-banos" style="height:320px;border-radius:10px">
-        <div class="ba-panel ba-left-p" id="ba-ban-l">
-          <img src="bano1_antes.jpg" alt="Baño antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="ba-panel ba-right-p" id="ba-ban-r">
-          <img src="bano1_despues.jpg" alt="Baño después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center">
-        </div>
+        <div class="ba-panel ba-left-p" id="ba-ban-l"><img src="bano1_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+        <div class="ba-panel ba-right-p" id="ba-ban-r"><img src="bano1_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
         <div class="ba-divider" id="ba-ban-d"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
     </div>
   </div>
-
   <div class="pricing-section">
     <div class="sec-lbl">Tarifas</div>
     <div class="sec-ttl" style="font-size:36px">Elige el tipo de reforma<br>que se adapta a ti.</div>
     <div class="pricing-grid">
       <div class="price-card">
-        <h3>Baño Esencial</h3>
-        <div class="price">3.500€ <small>IVA incl.</small></div>
+        <h3>Baño Esencial</h3><div class="price">3.500€ <small>IVA incl.</small></div>
         <div class="price-desc">Reforma funcional con materiales de calidad estándar</div>
         <div class="price-feats">
           <div class="pf"><i class="ti ti-check pf-check"></i>Alicatado y solado nuevo</div>
@@ -655,8 +423,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
       <div class="price-card featured">
         <div class="price-feat-badge">Más popular</div>
-        <h3>Baño Premium</h3>
-        <div class="price">5.500€ <small>IVA incl.</small></div>
+        <h3>Baño Premium</h3><div class="price">5.500€ <small>IVA incl.</small></div>
         <div class="price-desc">Reforma completa con materiales y acabados de primera</div>
         <div class="price-feats">
           <div class="pf"><i class="ti ti-check pf-check"></i>Todo lo del Esencial</div>
@@ -669,8 +436,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
         <button class="btn-p" style="width:100%;font-size:13px;padding:12px" onclick="goPage('contacto')">Solicitar este pack</button>
       </div>
       <div class="price-card">
-        <h3>Baño Suite</h3>
-        <div class="price">8.500€ <small>IVA incl.</small></div>
+        <h3>Baño Suite</h3><div class="price">8.500€ <small>IVA incl.</small></div>
         <div class="price-desc">El baño de lujo que siempre quisiste, sin límites</div>
         <div class="price-feats">
           <div class="pf"><i class="ti ti-check pf-check"></i>Todo lo del Premium</div>
@@ -684,13 +450,11 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
   </div>
-
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Quieres reformar tu baño?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratuito →</button></div>
   </div>
-
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -699,20 +463,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
   </footer>
 </div><!-- /page-banos -->
 
-
-
-
-
-<!-- ============================================================ -->
 <!-- PAGE: CÓMO FUNCIONA -->
-<!-- ============================================================ -->
 <div class="page" id="page-como">
   <div class="como-hero">
     <div class="hero-badge" style="margin:0 auto 20px">El proceso</div>
     <h1>Así de fácil es<br>reformar <em>con Bricko.</em></h1>
     <p>Un proceso claro, sin sorpresas y con un equipo que te acompaña en cada paso.</p>
   </div>
-
   <div class="timeline-section">
     <div class="sec-lbl" style="text-align:center">Paso a paso</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center">Del formulario a la entrega.</div>
@@ -752,7 +509,6 @@ footer{background:var(--dk);padding:56px 48px 28px}
             <div class="tl-di"><i class="ti ti-check"></i>Contrato claro</div>
             <div class="tl-di"><i class="ti ti-truck"></i>Gestión de materiales</div>
             <div class="tl-di"><i class="ti ti-calendar"></i>Fecha de inicio fija</div>
-            
           </div></div>
         </div>
       </div>
@@ -762,7 +518,6 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <h3>Ejecución de la obra</h3>
           <p>Nuestro equipo trabaja de lunes a viernes. Recibes fotos y actualizaciones del progreso. El jefe de obra está disponible en todo momento.</p>
           <div class="tl-detail"><div class="tl-detail-grid">
-            
             <div class="tl-di"><i class="ti ti-camera"></i>Fotos diarias del avance</div>
             <div class="tl-di"><i class="ti ti-user-check"></i>Jefe de obra dedicado</div>
             <div class="tl-di"><i class="ti ti-alert-triangle"></i>Cero subcontratas</div>
@@ -777,39 +532,41 @@ footer{background:var(--dk);padding:56px 48px 28px}
           <div class="tl-detail"><div class="tl-detail-grid">
             <div class="tl-di"><i class="ti ti-checks"></i>Revisión conjunta</div>
             <div class="tl-di"><i class="ti ti-sparkles"></i>Limpieza final incluida</div>
-            
             <div class="tl-di"><i class="ti ti-file-certificate"></i>Documentación completa</div>
           </div></div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="garantias-section">
     <div class="sec-lbl" style="text-align:center">Garantías</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center">Por qué elegir Bricko.</div>
     <div class="gar-grid">
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-lock-dollar"></i></div><h3>Precio cerrado</h3><p>El presupuesto que te damos es el que pagas. Sin sorpresas finales ni costes ocultos.</p></div>
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-calendar-check"></i></div><h3>Plazo garantizado</h3><p>Si nos pasamos del plazo acordado, te compensamos. El tiempo de tu obra está garantizado.</p></div>
-      
       <div class="gar-card"><div class="gar-ic"><i class="ti ti-eye"></i></div><h3>Transparencia total</h3><p>Fotos diarias, acceso al jefe de obra y actualizaciones constantes. Tú siempre sabes qué pasa.</p></div>
     </div>
   </div>
-
   <div class="faq-section">
     <div class="sec-lbl" style="text-align:center">FAQ</div>
     <div class="sec-ttl" style="font-size:36px;text-align:center;margin-bottom:0">Preguntas frecuentes.</div>
     <div class="faq-list">
       <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Cuánto tarda una reforma de baño?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Nuestro equipo completa la mayoría de reformas de baño en tan solo 5 días laborables. Trabajamos con procesos optimizados y materiales preparados de antemano para que la obra sea lo más ágil posible. Te damos un plazo cerrado en el presupuesto y lo cumplimos.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿El precio es realmente cerrado?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Sí, completamente. El presupuesto que te damos es el que pagas al final. No hay costes adicionales ni sorpresas. Si durante la obra aparece algún imprevisto puntual, te lo comunicamos antes de actuar y siempre requiere tu aprobación.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Tengo que estar en casa durante las obras?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">No es necesario. Te pedimos acceso al principio y acordamos una forma cómoda de entrada y salida. Recibirás fotos diarias del avance.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Los precios incluyen los materiales?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Sí, todos nuestros presupuestos son llave en mano: incluyen materiales, mano de obra, gestión y limpieza final. El precio que te damos es lo que pagas al final.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Puedo elegir los materiales y azulejos?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Por supuesto. Nuestro diseñador te guía en la selección según tu gusto y presupuesto. También podemos acompañarte a showrooms de proveedores.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Qué pasa si no me gusta el resultado final?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Antes de empezar la obra te presentamos un diseño 3D detallado para que veas exactamente cómo quedará tu baño. Hacemos hasta 3 revisiones del diseño hasta que estés completamente satisfecho. Solo empezamos cuando tú das el visto bueno.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Trabajáis en Barcelona y alrededores?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Sí, operamos en Barcelona y sus barrios: Gràcia, Sarrià, Horta, Eixample, Sant Gervasi, Les Corts, Sants y alrededores. Si tienes dudas sobre tu zona, consúltanos sin compromiso.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Cuánto cuesta una reforma de baño?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Depende del tamaño y los materiales elegidos. Nuestros packs empiezan desde 3.800€ para un baño de gama media completo, y desde 5.000€ para un baño de gama alta. El presupuesto es gratuito y sin compromiso.</p></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q"><span>¿Necesito pedir permisos de obra?</span><i class="ti ti-chevron-down"></i></div><p class="faq-a">Para reformas de baño sin modificar la estructura del edificio generalmente no se necesitan permisos. Nosotros te asesoramos según tu caso concreto y nos encargamos de la documentación si fuera necesaria.</p></div>
     </div>
   </div>
-
   <div class="contact-section" style="background:var(--dk)">
     <div class="sec-ttl" style="font-size:32px;text-align:center;margin-bottom:20px;color:var(--cr)">¿Empezamos tu reforma?</div>
     <p style="text-align:center;color:#7A6E60;font-size:14px;margin-bottom:32px">Pide presupuesto gratis. Te contactamos en 24h.</p>
     <div style="text-align:center"><button class="btn-p" onclick="goPage('contacto')">Pedir presupuesto gratis →</button></div>
   </div>
-
   <footer>
     <div class="footer-bottom" style="border-top:1px solid #2C2218;padding-top:20px">
       <span style="font-size:11px;color:#5A4E40">© 2025 Bricko</span>
@@ -818,20 +575,13 @@ footer{background:var(--dk);padding:56px 48px 28px}
   </footer>
 </div><!-- /page-como -->
 
-
-
-
-
-<!-- ============================================================ -->
 <!-- PAGE: CONTACTO -->
-<!-- ============================================================ -->
 <div class="page" id="page-contacto">
   <div style="background:var(--dk);padding:60px 48px;text-align:center">
     <div class="hero-badge" style="margin:0 auto 16px">Presupuesto gratis</div>
     <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:48px;font-weight:800;color:var(--cr);letter-spacing:-2px;margin-bottom:12px;line-height:1.1">¿Empezamos<br><span style="color:var(--o)">tu reforma?</span></h1>
     <p style="font-size:15px;color:#7A6E60;max-width:420px;margin:0 auto;line-height:1.7">Cuéntanos tu proyecto. Un asesor te contactará en menos de 24 horas con toda la información.</p>
   </div>
-
   <div class="contact-section">
     <div class="contact-inner">
       <div class="contact-left">
@@ -856,7 +606,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
         </div>
       </div>
       <div class="form-card">
-        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
           <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
           <input type="hidden" name="from_name" value="Bricko Web">
@@ -889,14 +639,9 @@ footer{background:var(--dk);padding:56px 48px 28px}
       </div>
     </div>
     <div style="margin-top:48px;border-radius:20px;overflow:hidden;border:1px solid var(--bd);height:360px">
-      <iframe
-        src="https://maps.google.com/maps?q=Carrer+de+Girona+53,+Barcelona&t=&z=16&ie=UTF8&iwloc=&output=embed"
-        width="100%" height="360" style="border:0;display:block"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <iframe src="https://maps.google.com/maps?q=Carrer+de+Girona+53,+Barcelona&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="360" style="border:0;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
-
   <footer>
     <div class="footer-top">
       <div>
@@ -913,12 +658,7 @@ footer{background:var(--dk);padding:56px 48px 28px}
   </footer>
 </div><!-- /page-contacto -->
 
-
-<!-- ============================================================ -->
-<!-- JAVASCRIPT -->
-<!-- ============================================================ -->
 <script>
-/* ---- NAVIGATION ---- */
 function goPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
@@ -927,37 +667,23 @@ function goPage(id) {
   if (map[id]) document.getElementById(map[id]).classList.add('active');
   window.scrollTo(0, 0);
 }
-
-/* ---- BEFORE/AFTER SLIDER ---- */
 function initBA(wrapperId, divId, leftId, rightId) {
   const w = document.getElementById(wrapperId);
   const d = document.getElementById(divId);
   const l = document.getElementById(leftId);
   const r = document.getElementById(rightId);
   if (!w || !d || !l || !r) return;
-
-  // Get the images inside each panel
   const imgL = l.querySelector('img');
   const imgR = r.querySelector('img');
-
-  // Both panels cover the full container; clipping reveals one or the other
-  // Left panel: anchored left, width grows
-  // Right panel: anchored right, width grows from right side
-  // Images inside are always 100% of the CONTAINER, not the panel
   function applyStyles() {
     const W = w.offsetWidth;
-    const H = w.offsetHeight;
-    // Panels
     l.style.cssText = 'position:absolute;top:0;left:0;height:100%;overflow:hidden;';
     r.style.cssText = 'position:absolute;top:0;right:0;height:100%;overflow:hidden;';
-    // Images stretch to full container width, anchored to their side
     if (imgL) imgL.style.cssText = 'position:absolute;top:0;left:0;width:' + W + 'px;height:100%;object-fit:cover;';
     if (imgR) imgR.style.cssText = 'position:absolute;top:0;right:0;width:' + W + 'px;height:100%;object-fit:cover;';
   }
-
   applyStyles();
   window.addEventListener('resize', applyStyles);
-
   let drag = false;
   function set(x) {
     const rect = w.getBoundingClientRect();
@@ -966,9 +692,7 @@ function initBA(wrapperId, divId, leftId, rightId) {
     l.style.width = pct + '%';
     r.style.width = (100 - pct) + '%';
   }
-  // Start at 50%
   set(w.getBoundingClientRect().left + w.offsetWidth / 2);
-
   w.addEventListener('mousedown', e => { drag = true; set(e.clientX); e.preventDefault(); });
   window.addEventListener('mousemove', e => { if (drag) set(e.clientX); });
   window.addEventListener('mouseup', () => { drag = false; });
@@ -976,77 +700,11 @@ function initBA(wrapperId, divId, leftId, rightId) {
   window.addEventListener('touchmove', e => { if (drag) set(e.touches[0].clientX); }, {passive:true});
   window.addEventListener('touchend', () => { drag = false; });
 }
-
 initBA('ba-hero','ba-h-div','ba-h-l','ba-h-r');
 initBA('ba-banos','ba-ban-d','ba-ban-l','ba-ban-r');
-initBA('ba-coc','ba-coc-d','ba-coc-l','ba-coc-r');
 initBA('g1','g1-d','g1-l','g1-r');
 initBA('g2','g2-d','g2-l','g2-r');
 initBA('g3','g3-d','g3-l','g3-r');
-
-/* ---- FINANCING CALCULATOR ---- */
-const impEl = document.getElementById('c-imp');
-const plaEl = document.getElementById('c-pla');
-function updateCalc() {
-  const v = parseInt(impEl.value);
-  const p = parseInt(plaEl.value);
-  document.getElementById('cv-imp').textContent = v.toLocaleString('es-ES') + '€';
-  document.getElementById('cv-pla').textContent = p + ' meses';
-  const sinInt = p <= 12;
-  const rate = sinInt ? 0 : 0.049 / 12;
-  let cuota = sinInt ? Math.round(v / p) : Math.round(v * rate / (1 - Math.pow(1 + rate, -p)));
-  const total = cuota * p;
-  document.getElementById('cv-cuota').textContent = cuota.toLocaleString('es-ES') + '€/mes';
-  const intEl = document.getElementById('cv-int');
-  intEl.textContent = sinInt ? '0% TAE' : '4.9% TIN';
-  intEl.style.color = sinInt ? '#1D9E75' : '#E8521A';
-  document.getElementById('cv-total').textContent = total.toLocaleString('es-ES') + '€';
-  document.getElementById('cv-plazo').textContent = p + ' meses';
-}
-if (impEl && plaEl) {
-  impEl.addEventListener('input', updateCalc);
-  plaEl.addEventListener('input', updateCalc);
-  updateCalc();
-}
-
-/* ---- CONTACT FORM ---- */
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = document.getElementById('form-btn');
-  btn.textContent = 'Enviando...';
-  btn.disabled = true;
-  /*
-    INTEGRACIÓN DEL FORMULARIO — elige una opción:
-
-    OPCIÓN A — Formspree (recomendado, gratis hasta 50 envíos/mes):
-      1. Ve a formspree.io y crea una cuenta
-      2. Crea un formulario y copia tu ID (ej: "xpzgkqvw")
-      3. Cambia la línea del form:
-         <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="9a03a3c6-6a6d-4455-baba-f3417c370da6">
-          <input type="hidden" name="subject" value="Nuevo lead - Bricko Web">
-          <input type="hidden" name="from_name" value="Bricko Web">
-         por:
-         <form id="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
-         y borra este script handleSubmit
-
-    OPCIÓN B — Typeform embed:
-      1. Crea tu formulario en typeform.com
-      2. Sustituye todo el <form> por el código embed de Typeform
-
-    OPCIÓN C — WhatsApp directo (más sencillo):
-      Cambia el botón de submit por:
-      <a href="https://wa.me/34TUNUMERO?text=Hola,%20quiero%20pedir%20presupuesto" class="form-sub" style="display:block;text-align:center;text-decoration:none">
-        Contactar por WhatsApp →
-      </a>
-  */
-  setTimeout(() => {
-    btn.textContent = '¡Enviado! Te llamamos pronto.';
-    btn.style.background = '#1D9E75';
-    document.getElementById('contact-form').reset();
-  }, 1000);
-}
 </script>
-
 </body>
 </html>
