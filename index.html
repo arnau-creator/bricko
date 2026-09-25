@@ -230,7 +230,8 @@ nav{background:#141311;border-color:#302D29;padding:17px clamp(20px,5vw,76px)}
 .proc-section,.testi-section{background:#171614;padding:clamp(64px,8vw,112px) clamp(20px,5vw,76px)}
 .proc-section .sec-ttl,.testi-section .sec-ttl{color:#fff!important}.proc-section .sec-lbl,.testi-section .sec-lbl{color:#D36B3B!important}
 .steps{gap:12px;margin-top:40px}.step{background:#211F1B;border:1px solid #393630;border-radius:2px;padding:30px 24px}.step-n{color:#D36B3B;font-size:38px}.step h4{color:#fff;font-size:16px}.step p{color:#B9B5AF}
-.gallery-section{background:#fff}.project-group+.project-group{margin-top:72px}.project-group .sec-ttl{font-size:clamp(30px,3.6vw,44px)!important}.gallery-grid{gap:16px;margin-top:32px}.before-after-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.photo-projects-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}.obra-card{display:flex;flex-direction:column;border:0;border-radius:2px;background:#F4F2EE}.obra-ba{height:250px;flex:none}.obra-photo{height:auto;aspect-ratio:1/1;background:#E5E1DA;display:grid;place-items:center;overflow:hidden;flex:none}.obra-photo img{display:block;width:100%!important;height:100%;object-fit:cover!important;object-position:center!important}.obra-photo-floor img{object-position:center 75%!important}.obra-info{padding:21px 20px 24px;flex:1}.obra-tag{border-radius:1px;background:#F1E4DC;color:#9A3F1D}.obra-info h4{font-size:16px}
+.gallery-section{background:#fff}.project-group+.project-group{margin-top:72px}.project-group .sec-ttl{font-size:clamp(30px,3.6vw,44px)!important}.gallery-grid{gap:16px;margin-top:32px}.before-after-grid{grid-template-columns:1fr}.photo-projects-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}.obra-card{display:flex;flex-direction:column;border:0;border-radius:2px;background:#F4F2EE}.before-after-grid .obra-card{width:min(100%,960px);margin-inline:auto}.obra-ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;height:auto;position:relative;overflow:hidden;background:var(--bd);cursor:default;user-select:auto}.obra-ba .ba-panel{position:relative!important;top:auto!important;left:auto!important;right:auto!important;width:100%!important;height:auto!important;aspect-ratio:3/4;overflow:hidden}.obra-ba .ba-panel img{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}.obra-ba .ba-divider{display:none}.obra-ba .ba-panel .ba-cap{font-size:12px;letter-spacing:1px;padding:6px 12px;bottom:14px}.obra-photo{height:auto;aspect-ratio:1/1;background:#E5E1DA;display:grid;place-items:center;overflow:hidden;flex:none}.obra-photo img{display:block;width:100%!important;height:100%;object-fit:cover!important;object-position:center!important}.obra-photo-floor img{object-position:center 75%!important}.obra-info{padding:21px 20px 24px;flex:1}.obra-tag{border-radius:1px;background:#F1E4DC;color:#9A3F1D;max-width:100%}.obra-info h4{font-size:18px}
+.srv-card p{font-size:15px}.sf{font-size:14px}.step p{font-size:14px}.obra-info p{font-size:14px;line-height:1.65}.obra-tag{font-size:12px;line-height:1.45;letter-spacing:.5px}.testi-card p{font-size:15px}.testi-loc{font-size:12px}.stat-l{font-size:11px}.sec-lbl{font-size:12px}.btn-p,.btn-g{font-size:15px;min-height:48px}.nav-links a{font-size:13px}
 .testi-grid{gap:14px;margin-top:40px}.testi-card{background:#211F1B;border:1px solid #393630;border-radius:2px}.testi-card p,.testi-name{color:#fff}.testi-loc{color:#B9B5AF}
 .contact-section{background:#F4F2EE}.contact-inner{gap:clamp(28px,6vw,88px)}.contact-left h2{font-size:clamp(34px,4vw,52px);letter-spacing:-1.8px}.contact-left>p{max-width:440px}.cinfo-ic{border-radius:2px;background:#F1E4DC}.cinfo-ic i{color:#B84E24}
 .form-card{border:1px solid #E1DDD6;border-radius:2px;box-shadow:0 20px 60px rgba(25,22,18,.08)}.form-card input,.form-card select,.form-card textarea{border-radius:2px}.form-sub{background:#B84E24;border-radius:2px}.form-legal{line-height:1.6}
@@ -246,6 +247,24 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
 @media(max-width:768px){.contact-inner .form-card{order:-1;margin-bottom:8px}}
 @media(max-width:420px){.nav-cta{font-size:10px;padding:9px 11px}.logo{font-size:18px}.logo img{height:26px!important}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions button{width:100%}.steps{grid-template-columns:1fr}}
 @media(max-width:600px){.before-after-grid{grid-template-columns:1fr}.project-group+.project-group{margin-top:52px}}
+@media(max-width:760px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:0;padding:34px 20px 0;min-height:0;align-items:stretch}
+  .hero-left{min-width:0;padding:24px 0 28px}
+  .hero h1{font-size:clamp(36px,9.8vw,48px);letter-spacing:-1.9px;max-width:100%;overflow-wrap:normal;word-break:normal}
+  .hero-sub{max-width:100%;font-size:15px;margin:18px 0 24px}
+  .hero-actions{flex-direction:column;align-items:stretch;gap:10px}
+  .hero-actions .btn-p,.hero-actions .btn-g{width:100%;text-align:center}
+  .hero>div:last-child{min-width:0}
+  .before-after{width:100%;height:110vw!important;min-height:340px;max-height:480px}
+  .hero-sub{font-size:16px}
+  .obra-ba{grid-template-columns:1fr}
+  .before-after-grid .obra-card{width:100%}
+  .obra-ba .ba-panel{aspect-ratio:3/4}
+  .obra-info{padding:20px 18px 24px}
+  .stat-l{font-size:10px;line-height:1.35}
+  .nav-links a{font-size:12px}
+  .srv-card,.step,.testi-card,.obra-card,.form-card,.price-card,.gar-card{min-width:0}
+}
 #proyectos,#proceso,#contact-form{scroll-margin-top:110px}
 </style>
 </head>
@@ -276,7 +295,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
     </div>
     <div>
       <div class="before-after" id="ba-hero" style="height:360px">
-        <div class="ba-panel ba-left-p" id="ba-h-l"><img src="cornella-antes-recreacion-banera.png" alt="Recreación del baño con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+        <div class="ba-panel ba-left-p" id="ba-h-l"><img src="cornella-antes-recreacion-banera.png" alt="Baño de Cornellà con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
         <div class="ba-panel ba-right-p" id="ba-h-r"><img src="cornella-despues.jpg" alt="Baño completo en Cornellà, después de la reforma, con tonos neutros y madera" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
         <div class="ba-divider" id="ba-h-div"><div class="ba-handle">⟺</div></div>
         <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
@@ -304,7 +323,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
     <div class="sec-lbl">Nuestros servicios</div>
     <div class="sec-ttl" style="font-size:38px">Lo que hacemos<br>mejor que nadie.</div>
     <div class="srv-grid">
-      <div class="srv-card" onclick="goPage('banos')">
+      <div class="srv-card" onclick="goToLeadForm()" role="link" tabindex="0" onkeydown="if(event.key==='Enter')goToLeadForm()">
         <div class="srv-ic"><i class="ti ti-bath"></i></div>
         <h3>Baño Esencial</h3>
         <p>Una reforma completa con materiales de calidad y acabados modernos. Todo incluido, sin sorpresas, en solo 5 días.</p>
@@ -317,7 +336,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
         <div class="srv-price"><div class="sp-from">Desde</div><div class="sp-num">5.500€ <small>baño completo</small></div></div>
         <div class="srv-arr"><i class="ti ti-arrow-right"></i></div>
       </div>
-      <div class="srv-card" onclick="goPage('banos')">
+      <div class="srv-card" onclick="goToLeadForm()" role="link" tabindex="0" onkeydown="if(event.key==='Enter')goToLeadForm()">
         <div class="srv-ic"><i class="ti ti-star"></i></div>
         <h3>Baño Premium</h3>
         <p>Diseño exclusivo, materiales premium y acabados de lujo. El baño que siempre quisiste, entregado en 5 días.</p>
@@ -352,37 +371,29 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
       <div class="gallery-grid before-after-grid">
         <div class="obra-card">
           <div class="obra-ba" id="g-cornella">
-            <div class="ba-panel ba-left-p" id="g-cornella-l"><img src="cornella-antes-recreacion-banera.png" alt="Baño de Cornellà con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-            <div class="ba-panel ba-right-p" id="g-cornella-r"><img src="cornella-despues.jpg" alt="Baño completo en Cornellà después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-            <div class="ba-divider" id="g-cornella-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+            <div class="ba-panel ba-left-p" id="g-cornella-l"><img src="cornella-antes-recreacion-banera.png" alt="Baño de Cornellà con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"><span class="ba-cap cap-b">Antes</span></div>
+            <div class="ba-panel ba-right-p" id="g-cornella-r"><img src="cornella-despues.jpg" alt="Baño completo en Cornellà después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"><span class="ba-cap cap-a">Después</span></div>
           </div>
           <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Cornellà</h4><p>De los azulejos azules a un espacio sereno, luminoso y cálido.</p></div>
         </div>
         <div class="obra-card">
           <div class="obra-ba" id="g1">
-            <div class="ba-panel ba-left-p" id="g1-l"><img src="bano1_antes.jpg" alt="Baño antes de la reforma en Barcelona Gràcia" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-            <div class="ba-panel ba-right-p" id="g1-r"><img src="bano1_despues.jpg" alt="Baño después de la reforma en Barcelona Gràcia" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-            <div class="ba-divider" id="g1-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+            <div class="ba-panel ba-left-p" id="g1-l"><img src="bano1_antes.jpg" alt="Baño antes de la reforma en Barcelona Gràcia" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"><span class="ba-cap cap-b">Antes</span></div>
+            <div class="ba-panel ba-right-p" id="g1-r"><img src="bano1_despues.jpg" alt="Baño después de la reforma en Barcelona Gràcia" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"><span class="ba-cap cap-a">Después</span></div>
           </div>
           <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Barcelona Gràcia</h4><p>Reforma integral con plato de ducha, sanitarios suspendidos y acabados cuidados.</p></div>
         </div>
         <div class="obra-card">
           <div class="obra-ba" id="g2">
-            <div class="ba-panel ba-left-p" id="g2-l"><img src="bano2_antes.jpeg" alt="Baño antes de la reforma en Barcelona Sarrià" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-            <div class="ba-panel ba-right-p" id="g2-r"><img src="bano2_despues.jpg" alt="Baño después de la reforma en Barcelona Sarrià" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-            <div class="ba-divider" id="g2-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+            <div class="ba-panel ba-left-p" id="g2-l"><img src="bano2_antes.jpeg" alt="Baño antes de la reforma en Barcelona Sarrià" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"><span class="ba-cap cap-b">Antes</span></div>
+            <div class="ba-panel ba-right-p" id="g2-r"><img src="bano2_despues.jpg" alt="Baño después de la reforma en Barcelona Sarrià" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"><span class="ba-cap cap-a">Después</span></div>
           </div>
           <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Barcelona Sarrià</h4><p>Reforma integral con acabados modernos, espejo LED y mampara de diseño.</p></div>
         </div>
         <div class="obra-card">
           <div class="obra-ba" id="g3">
-            <div class="ba-panel ba-left-p" id="g3-l"><img src="bano3_antes.jpg" alt="Baño antes de la reforma en Barcelona Horta" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-            <div class="ba-panel ba-right-p" id="g3-r"><img src="bano3_despues.jpg" alt="Baño después de la reforma en Barcelona Horta" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-            <div class="ba-divider" id="g3-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+            <div class="ba-panel ba-left-p" id="g3-l"><img src="bano3_antes.jpg" alt="Baño antes de la reforma en Barcelona Horta" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"><span class="ba-cap cap-b">Antes</span></div>
+            <div class="ba-panel ba-right-p" id="g3-r"><img src="bano3_despues.jpg" alt="Baño después de la reforma en Barcelona Horta" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"><span class="ba-cap cap-a">Después</span></div>
           </div>
           <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño suite · Barcelona Horta</h4><p>Reforma completa con ducha de lluvia, mueble suspendido y suelo porcelánico gran formato.</p></div>
         </div>
@@ -432,7 +443,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
         <p class="footer-tagline">Reformas de baños con diseño, calidad y sin complicaciones.</p>
       </div>
       <div class="footer-cols">
-        <div class="footer-col"><h5>Servicios</h5><a onclick="goPage('banos')">Reforma de baño</a></div>
+        <div class="footer-col"><h5>Servicios</h5><a onclick="goToLeadForm()">Reforma de baño</a></div>
         <div class="footer-col"><h5>Empresa</h5><a onclick="goPage('como')">Cómo funciona</a><a onclick="goPage('home')">Inicio</a><a onclick="goToLeadForm()">Contacto</a></div>
         <div class="footer-col"><h5>Legal</h5><a>Política de privacidad</a><a>Aviso legal</a><a>Cookies</a></div>
       </div>
@@ -648,10 +659,6 @@ function goPage(id) {
     if (id === 'banos') initBA('ba-banos','ba-ban-d','ba-ban-l','ba-ban-r');
     if (id === 'home') {
       initBA('ba-hero','ba-h-div','ba-h-l','ba-h-r');
-      initBA('g1','g1-d','g1-l','g1-r');
-      initBA('g2','g2-d','g2-l','g2-r');
-      initBA('g3','g3-d','g3-l','g3-r');
-      initBA('g-cornella','g-cornella-d','g-cornella-l','g-cornella-r');
     }
   }, 50);
 }
@@ -705,10 +712,6 @@ function initBA(wrapperId, divId, leftId, rightId) {
 }
 initBA('ba-hero','ba-h-div','ba-h-l','ba-h-r');
 initBA('ba-banos','ba-ban-d','ba-ban-l','ba-ban-r');
-initBA('g1','g1-d','g1-l','g1-r');
-initBA('g2','g2-d','g2-l','g2-r');
-initBA('g3','g3-d','g3-l','g3-r');
-initBA('g-cornella','g-cornella-d','g-cornella-l','g-cornella-r');
 
 // ============ Meta Ads: link directo a Contacto + tracking + envío sin salir de la web ============
 function getParam(name){
