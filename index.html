@@ -214,9 +214,9 @@ nav{background:#141311;border-color:#302D29;padding:17px clamp(20px,5vw,76px)}
 .logo{color:#fff;letter-spacing:1.5px}.logo img{content:url('bricko_icon_white.png')}
 .nav-links a{color:#B7B2AA}.nav-links a:hover,.nav-links a.active{color:#fff;border-bottom-color:#D36B3B}
 .nav-cta,.btn-p{background:#B84E24;border-radius:2px;letter-spacing:.5px}
-.hero{background:#141311;color:#fff;padding:52px clamp(20px,5vw,76px) 0;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:clamp(28px,5vw,80px);align-items:center;min-height:650px}
-.hero-left{padding:45px 0 76px}.hero-badge{background:rgba(184,78,36,.13);border-color:rgba(211,107,59,.5);color:#E18A60;border-radius:2px;letter-spacing:1.2px;text-transform:uppercase}
-.hero h1{font-size:clamp(48px,6vw,82px);line-height:.98;letter-spacing:-3.8px;color:#fff;max-width:640px}.hero h1 em{color:#D36B3B}
+.hero{background:#141311;color:#fff;padding:52px clamp(20px,5vw,76px) 0;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(28px,4vw,64px);align-items:center;min-height:650px}
+.hero-left{min-width:0;padding:45px 0 76px}.hero-badge{background:rgba(184,78,36,.13);border-color:rgba(211,107,59,.5);color:#E18A60;border-radius:2px;letter-spacing:1.2px;text-transform:uppercase}
+.hero h1{font-size:clamp(42px,4.3vw,64px);line-height:.98;letter-spacing:-2.6px;color:#fff;max-width:100%;overflow-wrap:anywhere}.hero h1 em{color:#D36B3B}
 .hero-sub{color:#B9B5AF;font-size:16px;max-width:440px;margin:24px 0 32px}.hero-actions{gap:12px}.hero-actions .btn-p{padding:16px 24px}.hero-actions .btn-g{color:#fff;border-color:#514D47;border-radius:2px}
 .hero > div:last-child{width:100%}.before-after{height:min(66vw,640px)!important;min-height:470px;border-radius:2px 2px 0 0;background:#24211D}
 .before-after img{object-position:center!important}.ba-divider{width:2px;background:#fff}.ba-handle{width:48px;height:48px;color:#fff;background:#B84E24;font-size:17px}
@@ -230,7 +230,7 @@ nav{background:#141311;border-color:#302D29;padding:17px clamp(20px,5vw,76px)}
 .proc-section,.testi-section{background:#171614;padding:clamp(64px,8vw,112px) clamp(20px,5vw,76px)}
 .proc-section .sec-ttl,.testi-section .sec-ttl{color:#fff!important}.proc-section .sec-lbl,.testi-section .sec-lbl{color:#D36B3B!important}
 .steps{gap:12px;margin-top:40px}.step{background:#211F1B;border:1px solid #393630;border-radius:2px;padding:30px 24px}.step-n{color:#D36B3B;font-size:38px}.step h4{color:#fff;font-size:16px}.step p{color:#B9B5AF}
-.gallery-section{background:#fff}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}.obra-card{border:0;border-radius:2px;background:#F4F2EE}.obra-ba{height:250px}.obra-photo{height:410px;background:#E5E1DA;display:grid;place-items:center;overflow:hidden}.obra-photo img{display:block;width:100%;height:100%;object-fit:contain}.obra-info{padding:21px 20px 24px}.obra-tag{border-radius:1px;background:#F1E4DC;color:#9A3F1D}.obra-info h4{font-size:16px}
+.gallery-section{background:#fff}.project-group+.project-group{margin-top:72px}.project-group .sec-ttl{font-size:clamp(30px,3.6vw,44px)!important}.gallery-grid{gap:16px;margin-top:32px}.before-after-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.photo-projects-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}.obra-card{display:flex;flex-direction:column;border:0;border-radius:2px;background:#F4F2EE}.obra-ba{height:250px;flex:none}.obra-photo{height:auto;aspect-ratio:1/1;background:#E5E1DA;display:grid;place-items:center;overflow:hidden;flex:none}.obra-photo img{display:block;width:100%!important;height:100%;object-fit:cover!important;object-position:center!important}.obra-photo-floor img{object-position:center 75%!important}.obra-info{padding:21px 20px 24px;flex:1}.obra-tag{border-radius:1px;background:#F1E4DC;color:#9A3F1D}.obra-info h4{font-size:16px}
 .testi-grid{gap:14px;margin-top:40px}.testi-card{background:#211F1B;border:1px solid #393630;border-radius:2px}.testi-card p,.testi-name{color:#fff}.testi-loc{color:#B9B5AF}
 .contact-section{background:#F4F2EE}.contact-inner{gap:clamp(28px,6vw,88px)}.contact-left h2{font-size:clamp(34px,4vw,52px);letter-spacing:-1.8px}.contact-left>p{max-width:440px}.cinfo-ic{border-radius:2px;background:#F1E4DC}.cinfo-ic i{color:#B84E24}
 .form-card{border:1px solid #E1DDD6;border-radius:2px;box-shadow:0 20px 60px rgba(25,22,18,.08)}.form-card input,.form-card select,.form-card textarea{border-radius:2px}.form-sub{background:#B84E24;border-radius:2px}.form-legal{line-height:1.6}
@@ -245,6 +245,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
 @media(max-width:768px){nav{padding:12px 18px;display:flex;flex-wrap:wrap}.logo{order:1}.nav-cta{order:2}.nav-links{display:flex!important;order:3;flex:0 0 100%;justify-content:flex-start;overflow-x:auto;gap:20px;padding:8px 2px 2px;scrollbar-width:none;white-space:nowrap}.nav-links a{flex-shrink:0;font-size:10px}.nav-links::-webkit-scrollbar{display:none}}
 @media(max-width:768px){.contact-inner .form-card{order:-1;margin-bottom:8px}}
 @media(max-width:420px){.nav-cta{font-size:10px;padding:9px 11px}.logo{font-size:18px}.logo img{height:26px!important}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions button{width:100%}.steps{grid-template-columns:1fr}}
+@media(max-width:600px){.before-after-grid{grid-template-columns:1fr}.project-group+.project-group{margin-top:52px}}
 #proyectos,#proceso,#contact-form{scroll-margin-top:110px}
 </style>
 </head>
@@ -254,7 +255,6 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
   <a class="logo" onclick="goPage('home')"><img src="bricko_icon_black.png" alt="" style="height:30px;width:auto">BRICKO</a>
   <div class="nav-links">
     <a onclick="goPage('home')" id="nav-inicio">Inicio</a>
-    <a onclick="goPage('banos')" id="nav-banos">Baños</a>
     <a onclick="goToSection('proyectos')" id="nav-proyectos">Proyectos</a>
     <a onclick="goToSection('proceso')" id="nav-proceso">Proceso</a>
     <a href="contacto.html" id="nav-contacto">Contacto</a>
@@ -267,7 +267,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
   <div class="hero">
     <div class="hero-left">
       <div class="hero-badge">Reformas sin estrés</div>
-      <h1>Tu baño nuevo.<br><em>Sin complicaciones.</em></h1>
+      <h1>Tu baño nuevo.<br><em>Sin<br>complicaciones</em></h1>
       <p class="hero-sub">Transforma tu baño en solo 5 días. Diseño, materiales, instalación y limpieza final incluidos. Sin sorpresas en el precio.</p>
       <div class="hero-actions">
         <button class="btn-p" onclick="goToLeadForm()">Quiero mi presupuesto gratis</button>
@@ -279,7 +279,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
         <div class="ba-panel ba-left-p" id="ba-h-l"><img src="cornella-antes-recreacion-banera.png" alt="Recreación del baño con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
         <div class="ba-panel ba-right-p" id="ba-h-r"><img src="cornella-despues.jpg" alt="Baño completo en Cornellà, después de la reforma, con tonos neutros y madera" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
         <div class="ba-divider" id="ba-h-div"><div class="ba-handle">⟺</div></div>
-        <span class="ba-cap cap-b">Antes · recreación</span><span class="ba-cap cap-a">Después</span>
+        <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
       </div>
       <div class="stats-bar">
         <div class="stat-b"><div class="stat-n">+200</div><div class="stat-l">Reformas completadas</div></div>
@@ -347,50 +347,63 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
   <div class="gallery-section" id="proyectos">
     <div class="sec-lbl">Trabajos recientes</div>
     <div class="sec-ttl" style="font-size:38px">Resultados que<br>hablan por sí solos.</div>
-    <div class="gallery-grid">
-      <div class="obra-card">
-        <div class="obra-photo"><img src="bano-diagonal-mar.jpg" alt="Baño reformado en Diagonal Mar con bañera y acabados claros" loading="lazy"></div>
-        <div class="obra-info"><span class="obra-tag">Proyecto real</span><h4>Baño completo · Diagonal Mar</h4><p>Un baño luminoso con bañera, revestimientos claros y mueble de lavabo en madera.</p></div>
-      </div>
-      <div class="obra-card">
-        <div class="obra-photo"><img src="bano-sant-andreu.jpg" alt="Baño reformado en Sant Andreu con azulejo verde y mueble de madera" loading="lazy"></div>
-        <div class="obra-info"><span class="obra-tag">Proyecto real</span><h4>Baño completo · Sant Andreu</h4><p>Azulejo verde, ducha y acabados cálidos en madera.</p></div>
-      </div>
-      <div class="obra-card">
-        <div class="obra-ba" id="g-cornella">
-          <div class="ba-panel ba-left-p" id="g-cornella-l"><img src="cornella-antes-recreacion-banera.png" alt="Recreación del baño de Cornellà con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-          <div class="ba-panel ba-right-p" id="g-cornella-r"><img src="cornella-despues.jpg" alt="Baño completo en Cornellà después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-          <div class="ba-divider" id="g-cornella-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-          <span class="ba-cap cap-b">Antes · recreación</span><span class="ba-cap cap-a">Después</span>
+    <div class="project-group before-after-group">
+      <div class="sec-lbl">Antes y después</div>
+      <div class="gallery-grid before-after-grid">
+        <div class="obra-card">
+          <div class="obra-ba" id="g-cornella">
+            <div class="ba-panel ba-left-p" id="g-cornella-l"><img src="cornella-antes-recreacion-banera.png" alt="Baño de Cornellà con bañera y azulejos azules antes de la reforma" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+            <div class="ba-panel ba-right-p" id="g-cornella-r"><img src="cornella-despues.jpg" alt="Baño completo en Cornellà después de la reforma" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
+            <div class="ba-divider" id="g-cornella-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
+            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+          </div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Cornellà</h4><p>De los azulejos azules a un espacio sereno, luminoso y cálido.</p></div>
         </div>
-        <div class="obra-info"><span class="obra-tag">Proyecto real</span><h4>Baño completo Cornellà · Antes y después</h4><p>De los azulejos azules a un espacio sereno, luminoso y cálido.</p></div>
-      </div>
-      <div class="obra-card">
-        <div class="obra-ba" id="g1">
-          <div class="ba-panel ba-left-p" id="g1-l"><img src="bano1_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-          <div class="ba-panel ba-right-p" id="g1-r"><img src="bano1_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-          <div class="ba-divider" id="g1-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-          <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+        <div class="obra-card">
+          <div class="obra-ba" id="g1">
+            <div class="ba-panel ba-left-p" id="g1-l"><img src="bano1_antes.jpg" alt="Baño antes de la reforma en Barcelona Gràcia" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+            <div class="ba-panel ba-right-p" id="g1-r"><img src="bano1_despues.jpg" alt="Baño después de la reforma en Barcelona Gràcia" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
+            <div class="ba-divider" id="g1-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
+            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+          </div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Barcelona Gràcia</h4><p>Reforma integral con plato de ducha, sanitarios suspendidos y acabados cuidados.</p></div>
         </div>
-        <div class="obra-info"><span class="obra-tag">Proyecto real</span><h4>Baño completo · Barcelona Gràcia</h4><p>Reforma integral con plato de ducha, sanitarios suspendidos y acabados cuidados.</p></div>
-      </div>
-      <div class="obra-card">
-        <div class="obra-ba" id="g2">
-          <div class="ba-panel ba-left-p" id="g2-l"><img src="bano2_antes.jpeg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-          <div class="ba-panel ba-right-p" id="g2-r"><img src="bano2_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-          <div class="ba-divider" id="g2-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-          <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+        <div class="obra-card">
+          <div class="obra-ba" id="g2">
+            <div class="ba-panel ba-left-p" id="g2-l"><img src="bano2_antes.jpeg" alt="Baño antes de la reforma en Barcelona Sarrià" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+            <div class="ba-panel ba-right-p" id="g2-r"><img src="bano2_despues.jpg" alt="Baño después de la reforma en Barcelona Sarrià" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
+            <div class="ba-divider" id="g2-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
+            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+          </div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Barcelona Sarrià</h4><p>Reforma integral con acabados modernos, espejo LED y mampara de diseño.</p></div>
         </div>
-        <div class="obra-info"><span class="obra-tag">Proyecto real</span><h4>Baño completo · Barcelona Sarrià</h4><p>Reforma integral con acabados modernos, espejo LED y mampara de diseño.</p></div>
-      </div>
-      <div class="obra-card">
-        <div class="obra-ba" id="g3">
-          <div class="ba-panel ba-left-p" id="g3-l"><img src="bano3_antes.jpg" alt="Antes" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
-          <div class="ba-panel ba-right-p" id="g3-r"><img src="bano3_despues.jpg" alt="Después" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
-          <div class="ba-divider" id="g3-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
-          <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+        <div class="obra-card">
+          <div class="obra-ba" id="g3">
+            <div class="ba-panel ba-left-p" id="g3-l"><img src="bano3_antes.jpg" alt="Baño antes de la reforma en Barcelona Horta" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"></div>
+            <div class="ba-panel ba-right-p" id="g3-r"><img src="bano3_despues.jpg" alt="Baño después de la reforma en Barcelona Horta" style="position:absolute;top:0;right:0;width:100%;height:100%;object-fit:cover;object-position:right center"></div>
+            <div class="ba-divider" id="g3-d"><div class="ba-handle" style="width:28px;height:28px;font-size:10px">⟺</div></div>
+            <span class="ba-cap cap-b">Antes</span><span class="ba-cap cap-a">Después</span>
+          </div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño suite · Barcelona Horta</h4><p>Reforma completa con ducha de lluvia, mueble suspendido y suelo porcelánico gran formato.</p></div>
         </div>
-        <div class="obra-info"><span class="obra-tag">Proyecto real</span><h4>Baño suite · Barcelona Horta</h4><p>Reforma completa con ducha de lluvia, mueble suspendido y suelo porcelánico gran formato.</p></div>
+      </div>
+    </div>
+    <div class="project-group photo-projects-group">
+      <div class="sec-lbl">Proyectos completos</div>
+      <div class="sec-ttl">Acabados de proyectos realizados.</div>
+      <div class="gallery-grid photo-projects-grid">
+        <div class="obra-card">
+          <div class="obra-photo"><img src="bano-plaza-catalunya.jpg" alt="Baño reformado en Plaza Catalunya con doble lavabo, espejo antivaho retroiluminado y bañera" loading="lazy"></div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Plaza Cataluña</h4><p>Acabados neutros, bañera nueva y doble lavamanos con espejo retroiluminado antivaho.</p></div>
+        </div>
+        <div class="obra-card">
+          <div class="obra-photo"><img src="bano-diagonal-mar.jpg" alt="Baño reformado y luminoso en Diagonal Mar con bañera" loading="lazy"></div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Diagonal Mar</h4><p>Un baño luminoso con bañera.</p></div>
+        </div>
+        <div class="obra-card">
+          <div class="obra-photo obra-photo-floor"><img src="bano-sant-andreu.jpg" alt="Baño reformado en Sant Andreu con azulejo verde y mueble de madera" loading="lazy"></div>
+          <div class="obra-info"><span class="obra-tag">Acabados de proyectos realizados</span><h4>Baño completo · Sant Andreu</h4><p>Azulejo verde, ducha y acabados cálidos en madera.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -623,7 +636,7 @@ function goPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const map = {home:'nav-inicio',banos:'nav-banos',como:'nav-proceso'};
+  const map = {home:'nav-inicio',como:'nav-proceso'};
   if (map[id]) document.getElementById(map[id]).classList.add('active');
   window.scrollTo(0, 0);
   if (history.replaceState) {
