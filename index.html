@@ -257,9 +257,11 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
   .hero>div:last-child{min-width:0}
   .before-after{width:100%;height:110vw!important;min-height:340px;max-height:480px}
   .hero-sub{font-size:16px}
-  .obra-ba{grid-template-columns:1fr}
+  .obra-ba{height:auto!important;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
   .before-after-grid .obra-card{width:100%}
-  .obra-ba .ba-panel{aspect-ratio:3/4}
+  .obra-ba .ba-panel{aspect-ratio:3/4;min-width:0}
+  .photo-projects-grid .obra-photo{aspect-ratio:3/4}
+  .photo-projects-grid .obra-photo img{object-fit:cover!important;object-position:center!important}
   .obra-info{padding:20px 18px 24px}
   .stat-l{font-size:10px;line-height:1.35}
   .nav-links a{font-size:12px}
