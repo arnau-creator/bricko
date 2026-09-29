@@ -11,21 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <link rel="icon" type="image/png" href="bricko_icon_black.png">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2190162971891185');
-var pvEventId = 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2,10);
-fbq('track', 'PageView', {}, {eventID: pvEventId});
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2190162971891185&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <style>
 /* ===================== RESET & BASE ===================== */
 *{box-sizing:border-box;margin:0;padding:0}
@@ -445,7 +430,7 @@ footer{background:#141311;border-top:1px solid #302D29}.footer-tagline,.footer-b
       <div class="footer-cols">
         <div class="footer-col"><h5>Servicios</h5><a onclick="goToLeadForm()">Reforma de baño</a></div>
         <div class="footer-col"><h5>Empresa</h5><a onclick="goPage('como')">Cómo funciona</a><a onclick="goPage('home')">Inicio</a><a onclick="goToLeadForm()">Contacto</a></div>
-        <div class="footer-col"><h5>Legal</h5><a>Política de privacidad</a><a>Aviso legal</a><a>Cookies</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="privacidad.html">Política de privacidad</a><a href="privacidad.html#cookies">Cookies y publicidad</a><a href="privacidad.html#derechos">Tus derechos</a><a href="#" onclick="event.preventDefault();brickoOpenCookieSettings()">Configurar cookies</a></div>
       </div>
     </div>
     <div class="footer-bottom"><span>© 2026 Bricko. Todos los derechos reservados.</span><span>Reformas sin estrés</span></div>
@@ -797,6 +782,29 @@ function routeFromHash(){
 }
 routeFromHash();
 window.addEventListener('hashchange', routeFromHash);
+</script>
+<div class="privacy-cookie-banner" id="privacy-cookie-banner" role="dialog" aria-label="Preferencias de cookies publicitarias" aria-live="polite" hidden>
+  <p>Usamos cookies publicitarias de Meta para medir los anuncios. Puedes aceptarlas o rechazarlas; el formulario seguirá funcionando.</p>
+  <div><button type="button" data-ads-consent="reject">Rechazar</button><button type="button" data-ads-consent="accept">Aceptar cookies publicitarias</button></div>
+</div>
+<style>
+.privacy-cookie-banner{position:fixed;z-index:9999;left:20px;right:20px;bottom:20px;max-width:900px;margin:auto;padding:18px 20px;background:#141311;color:#fff;border:1px solid #51483f;box-shadow:0 10px 40px #0005;display:flex;align-items:center;justify-content:space-between;gap:18px;font:14px/1.5 'DM Sans',sans-serif}.privacy-cookie-banner[hidden]{display:none}.privacy-cookie-banner p{margin:0;max-width:560px}.privacy-cookie-banner div{display:flex;gap:8px;flex-wrap:wrap}.privacy-cookie-banner button{border:1px solid #b84e24;background:transparent;color:#fff;padding:10px 14px;font:600 12px 'Plus Jakarta Sans',sans-serif;cursor:pointer}.privacy-cookie-banner button[data-ads-consent="accept"]{background:#b84e24}.cookie-settings-link{background:none;border:0;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit}@media(max-width:700px){.privacy-cookie-banner{left:10px;right:10px;bottom:10px;display:block}.privacy-cookie-banner p{margin-bottom:12px}.privacy-cookie-banner div button{flex:1}}
+</style>
+<script>
+(function(){
+  var pixelId='2190162971891185';
+  var banner=document.getElementById('privacy-cookie-banner');
+  function loadMetaPixel(){
+    if(window.fbq)return;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',pixelId);fbq('track','PageView');
+  }
+  function openCookieSettings(){if(banner)banner.hidden=false}
+  window.brickoOpenCookieSettings=openCookieSettings;
+  if(localStorage.getItem('bricko_ads_consent')==='accepted')loadMetaPixel();
+  else if(localStorage.getItem('bricko_ads_consent')!=='rejected'&&banner)banner.hidden=false;
+  document.querySelectorAll('[data-ads-consent]').forEach(function(button){button.addEventListener('click',function(){var choice=button.getAttribute('data-ads-consent');localStorage.setItem('bricko_ads_consent',choice==='accept'?'accepted':'rejected');if(banner)banner.hidden=true;if(choice==='accept')loadMetaPixel();else if(window.fbq)fbq('consent','revoke')})});
+})();
 </script>
 </body>
 </html>

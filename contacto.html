@@ -10,42 +10,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <link rel="icon" type="image/png" href="bricko_icon_black.png">
-  <!-- Meta Pixel -->
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2190162971891185');
-    var pvEventId = 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2,10);
-    fbq('track', 'PageView', {}, {eventID: pvEventId});
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2190162971891185&ev=PageView&noscript=1" alt=""></noscript>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     :root{--ink:#171614;--paper:#F4F2EE;--muted:#746F67;--line:#DCD7CE;--orange:#B84E24;--soft:#F1E4DC}
     html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
     nav{height:76px;padding:0 clamp(20px,5vw,76px);background:#141311;border-bottom:1px solid #302D29;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
     .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 20px 'Plus Jakarta Sans',sans-serif;letter-spacing:1.5px}.brand img{width:29px;height:29px;object-fit:contain}
-    .nav-links{display:flex;align-items:center;gap:clamp(16px,3vw,40px)}.nav-links a{color:#C6C1B9;text-decoration:none;font-size:14px;text-transform:uppercase;letter-spacing:1px}.nav-links a:hover{color:#fff}
-    .nav-cta,.submit{border:0;border-radius:2px;background:var(--orange);color:#fff;font:700 15px 'Plus Jakarta Sans',sans-serif;letter-spacing:.4px;padding:14px 20px;text-decoration:none;cursor:pointer}
+    .nav-links{display:flex;align-items:center;gap:clamp(16px,3vw,40px)}.nav-links a{color:#C6C1B9;text-decoration:none;font-size:13px;text-transform:uppercase;letter-spacing:1px}.nav-links a:hover{color:#fff}
+    .nav-cta,.submit{border:0;border-radius:2px;background:var(--orange);color:#fff;font:700 14px 'Plus Jakarta Sans',sans-serif;letter-spacing:.4px;padding:14px 20px;text-decoration:none;cursor:pointer}
     main{max-width:1320px;margin:auto;padding:clamp(38px,6vw,76px) clamp(20px,5vw,76px) 80px}
-    .eyebrow{display:inline-block;color:var(--orange);font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+    .eyebrow{display:inline-block;color:var(--orange);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
     h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif}h1{font-size:clamp(38px,5.4vw,68px);line-height:1.02;letter-spacing:-2.5px;max-width:800px;margin-bottom:18px}h1 em{color:var(--orange);font-style:normal}
-    .intro{max-width:620px;color:var(--muted);font-size:18px;line-height:1.7;margin-bottom:38px}
+    .intro{max-width:620px;color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:38px}
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:clamp(22px,5vw,72px);align-items:start}
     .form-card{background:#fff;border:1px solid #E1DDD6;box-shadow:0 20px 60px rgba(25,22,18,.08);padding:clamp(22px,4vw,42px)}
-    .form-card h2{font-size:28px;letter-spacing:-.7px;margin-bottom:8px}.form-intro{color:var(--muted);font-size:17px;line-height:1.6;margin-bottom:26px}
-    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:16px}.field label{display:block;font-size:16px;font-weight:700;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:15px 16px;min-height:54px;border:1px solid var(--line);border-radius:2px;background:white;color:var(--ink);font:18px 'DM Sans',sans-serif;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange);box-shadow:0 0 0 2px rgba(184,78,36,.1)}.field textarea{min-height:96px;resize:vertical}
-    .submit{width:100%;min-height:56px;padding:16px;font-size:17px}.submit:disabled{opacity:.65;cursor:wait}.legal{font-size:14px;color:var(--muted);line-height:1.6;margin-top:13px}
-    .side{padding-top:10px}.side h2{font-size:28px;line-height:1.15;letter-spacing:-.8px;margin-bottom:12px}.side>p{color:var(--muted);font-size:17px;line-height:1.7;margin-bottom:26px}
-    .benefit{display:flex;gap:12px;padding:15px 0;border-top:1px solid var(--line)}.benefit i{font-size:19px;color:var(--orange)}.benefit strong{display:block;font-size:16px;margin-bottom:3px}.benefit span{color:var(--muted);font-size:16px;line-height:1.5}
-    .contact-details{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);display:grid;gap:12px}.contact-details a{color:var(--ink);text-decoration:none;font-size:16px}.contact-details i{color:var(--orange);margin-right:8px}
+    .form-card h2{font-size:23px;letter-spacing:-.7px;margin-bottom:8px}.form-intro{color:var(--muted);font-size:15px;line-height:1.6;margin-bottom:26px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:16px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:2px;background:white;color:var(--ink);font:15px 'DM Sans',sans-serif;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange);box-shadow:0 0 0 2px rgba(184,78,36,.1)}.field textarea{min-height:96px;resize:vertical}
+    .submit{width:100%;padding:16px;font-size:13px}.submit:disabled{opacity:.65;cursor:wait}.legal{font-size:12px;color:var(--muted);line-height:1.6;margin-top:13px}
+    .side{padding-top:10px}.side h2{font-size:24px;line-height:1.15;letter-spacing:-.8px;margin-bottom:12px}.side>p{color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:26px}
+    .benefit{display:flex;gap:12px;padding:15px 0;border-top:1px solid var(--line)}.benefit i{font-size:19px;color:var(--orange)}.benefit strong{display:block;font-size:14px;margin-bottom:3px}.benefit span{color:var(--muted);font-size:14px;line-height:1.5}
+    .contact-details{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);display:grid;gap:12px}.contact-details a{color:var(--ink);text-decoration:none;font-size:14px}.contact-details i{color:var(--orange);margin-right:8px}
     .socials{display:flex;gap:10px;margin-top:22px}.socials a{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);color:var(--orange);text-decoration:none;font-size:18px}.socials a:hover{background:var(--soft)}
-    footer{background:#141311;color:#B9B5AF;padding:24px clamp(20px,5vw,76px);font-size:13px;display:flex;justify-content:space-between;gap:16px}footer a{color:#fff;text-decoration:none}
-    #formulario{scroll-margin-top:96px}.success{display:none;text-align:center;padding:28px 10px}.success .check{font-size:38px;margin-bottom:12px}.success h2{font-size:26px;margin-bottom:8px}.success p{color:var(--muted);font-size:15px;line-height:1.6}
-    @media(max-width:760px){nav{height:auto;min-height:68px;padding:12px 18px;flex-wrap:wrap;gap:10px}.brand{font-size:17px}.brand img{width:26px;height:26px}.nav-cta{padding:12px 14px;font-size:14px}.nav-links{order:3;flex:0 0 100%;overflow-x:auto;gap:22px;padding:5px 0 2px;white-space:nowrap}.nav-links a{font-size:13px;flex-shrink:0}main{display:flex;flex-direction:column;padding-top:20px}.layout{display:contents}.form-card{order:-1;width:100%;padding:22px 18px}.form-card h2{font-size:26px}.field input,.field select,.field textarea{font-size:18px;padding:15px 14px;min-height:54px}.legal{font-size:14px;line-height:1.65}.side{order:1}.form-row{grid-template-columns:1fr;gap:0}h1{letter-spacing:-1.7px}.intro{font-size:18px;margin-bottom:26px}}
+    footer{background:#141311;color:#B9B5AF;padding:24px clamp(20px,5vw,76px);font-size:11px;display:flex;justify-content:space-between;gap:16px}footer a{color:#fff;text-decoration:none}
+    #formulario{scroll-margin-top:96px}.success{display:none;text-align:center;padding:28px 10px}.success .check{font-size:38px;margin-bottom:12px}.success h2{font-size:22px;margin-bottom:8px}.success p{color:var(--muted);font-size:13px;line-height:1.6}
+    @media(max-width:760px){nav{height:auto;min-height:68px;padding:12px 18px;flex-wrap:wrap;gap:10px}.brand{font-size:17px}.brand img{width:26px;height:26px}.nav-cta{padding:11px 12px;font-size:12px}.nav-links{order:3;flex:0 0 100%;overflow-x:auto;gap:22px;padding:5px 0 2px;white-space:nowrap}.nav-links a{font-size:12px;flex-shrink:0}main{display:flex;flex-direction:column;padding-top:20px}.layout{display:contents}.form-card{order:-1;width:100%;padding:22px 18px}.form-card h2{font-size:25px}.field input,.field select,.field textarea{font-size:16px;padding:14px}.legal{font-size:12px;line-height:1.65}.side{order:1}.form-row{grid-template-columns:1fr;gap:0}h1{letter-spacing:-1.7px}.intro{font-size:16px;margin-bottom:26px}}
     @media(max-width:430px){.form-row{grid-template-columns:1fr;gap:0}.form-card{padding:22px 18px}.nav-links{gap:18px}footer{flex-direction:column}}
   </style>
 </head>
@@ -87,7 +75,7 @@
           <div class="field"><label for="presupuesto">Presupuesto orientativo (opcional)</label><select id="presupuesto" name="presupuesto"><option value="">Selecciona primero qué quieres reformar</option></select></div>
           <div class="field"><label for="mensaje">Cuéntanos un poco más (opcional)</label><textarea id="mensaje" name="mensaje" placeholder="Describe brevemente tu reforma..."></textarea></div>
           <button class="submit" type="submit">Enviar y recibir presupuesto gratis →</button>
-          <p class="legal">Al enviar aceptas nuestra política de privacidad. Nunca compartiremos tus datos con terceros.</p>
+          <p class="legal">Usaremos tus datos para atender tu solicitud. Consulta nuestra <a href="privacidad.html">política de privacidad</a>.</p>
         </form>
         <div class="success" role="status" aria-live="polite"><div class="check">✅</div><h2>¡Gracias! Hemos recibido tu solicitud.</h2><p>Te contactaremos en menos de 24 horas. Si es urgente, llámanos al <a href="tel:+34690659590">690 65 95 90</a>.</p></div>
       </section>
@@ -109,7 +97,7 @@
       </aside>
     </div>
   </main>
-  <footer><span>© 2026 Bricko. Todos los derechos reservados.</span><a href="index.html">Volver a la web</a></footer>
+  <footer><span>© 2026 Bricko. Todos los derechos reservados.</span><span><a href="privacidad.html">Política de privacidad</a> · <button class="cookie-settings-link" type="button" onclick="brickoOpenCookieSettings()">Configurar cookies</button> · <a href="index.html">Volver a la web</a></span></footer>
   <script>
     function getParam(name){try{return new URLSearchParams(window.location.search).get(name)||''}catch(e){return ''}}
     const form=document.querySelector('form');
@@ -129,6 +117,22 @@
         .then(result=>{if(result&&result.success!==false){if(typeof fbq==='function'){const eventId='lead_'+Date.now()+'_'+Math.random().toString(36).slice(2,10);fbq('track','Lead',{}, {eventID:eventId})}form.style.display='none';document.querySelector('.success').style.display='block';window.scrollTo({top:document.querySelector('.form-card').offsetTop-90,behavior:'smooth'})}else throw new Error('No se pudo enviar')})
         .catch(()=>{button.disabled=false;button.textContent=original;alert('No se ha podido enviar. Prueba de nuevo o llámanos al +34 690 65 95 90.')});
     });
+  </script>
+  <div class="privacy-cookie-banner" id="privacy-cookie-banner" role="dialog" aria-label="Preferencias de cookies publicitarias" aria-live="polite" hidden>
+    <p>Usamos cookies publicitarias de Meta para medir los anuncios. Puedes aceptarlas o rechazarlas; el formulario seguirá funcionando.</p>
+    <div><button type="button" data-ads-consent="reject">Rechazar</button><button type="button" data-ads-consent="accept">Aceptar cookies publicitarias</button></div>
+  </div>
+  <style>
+    .privacy-cookie-banner{position:fixed;z-index:9999;left:20px;right:20px;bottom:20px;max-width:900px;margin:auto;padding:18px 20px;background:#141311;color:#fff;border:1px solid #51483f;box-shadow:0 10px 40px #0005;display:flex;align-items:center;justify-content:space-between;gap:18px;font:14px/1.5 'DM Sans',sans-serif}.privacy-cookie-banner[hidden]{display:none}.privacy-cookie-banner p{margin:0;max-width:560px}.privacy-cookie-banner div{display:flex;gap:8px;flex-wrap:wrap}.privacy-cookie-banner button{border:1px solid #b84e24;background:transparent;color:#fff;padding:10px 14px;font:600 12px 'Plus Jakarta Sans',sans-serif;cursor:pointer}.privacy-cookie-banner button[data-ads-consent="accept"]{background:#b84e24}.cookie-settings-link{background:none;border:0;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit}@media(max-width:700px){.privacy-cookie-banner{left:10px;right:10px;bottom:10px;display:block}.privacy-cookie-banner p{margin-bottom:12px}.privacy-cookie-banner div button{flex:1}}
+  </style>
+  <script>
+    (function(){
+      var pixelId='2190162971891185',banner=document.getElementById('privacy-cookie-banner');
+      function loadMetaPixel(){if(window.fbq)return;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',pixelId);fbq('track','PageView')}
+      window.brickoOpenCookieSettings=function(){banner.hidden=false};
+      if(localStorage.getItem('bricko_ads_consent')==='accepted')loadMetaPixel();else if(localStorage.getItem('bricko_ads_consent')!=='rejected')banner.hidden=false;
+      document.querySelectorAll('[data-ads-consent]').forEach(function(button){button.addEventListener('click',function(){var accepted=button.getAttribute('data-ads-consent')==='accept';localStorage.setItem('bricko_ads_consent',accepted?'accepted':'rejected');banner.hidden=true;if(accepted)loadMetaPixel();else if(window.fbq)fbq('consent','revoke')})});
+    })();
   </script>
 </body>
 </html>
